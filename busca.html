@@ -52,37 +52,85 @@
 }
 #top-recents{
   min-height: 600px;
-  border: 2px solid #ccc; 
+}
+#top-recents h2{
+  margin-bottom: 20px;
 }
 .card{
-  border-radius: 10px;
-  -webkit-box-shadow: 3px 3px 30px 0px rgba(0,0,0,0.55);
+  border-radius: 5px;
+  /*-webkit-box-shadow: 3px 3px 30px 0px rgba(0,0,0,0.55);
   -moz-box-shadow: 3px 3px 30px 0px rgba(0,0,0,0.55);
-  box-shadow: 3px 3px 30px 0px rgba(0,0,0,0.55);
+  box-shadow: 3px 3px 30px 0px rgba(0,0,0,0.55);*/
+  position: relative;
+  min-height: 370px;
+  margin-bottom: 20px;
 }
-#card-1 .card-img-top{
-  padding: 20px 10px;
-  background: url(img/default/test-mario.jpg) no-repeat top center; 
-  background-size: 100%;
-  height: 160px;
+.card-body{
+  padding: 10px 15px;
 }
-#card-2 .card-img-top{
-  padding: 20px 10px;
-  background: url(img/default/teste-witcher.png) no-repeat top center; 
-  background-size: 100%;
-  height: 160px;
+.card-img-top{
+  padding: 10px 10px;
+  min-height: 160px;
+  text-align: center;
+  border-bottom: 1px solid #ccc
 }
-#card-3 .card-img-top{
-  padding: 20px 10px;
-  background: url(img/default/teste-pokemon.png) no-repeat top center; 
-  background-size: 100%;
-  height: 160px;
+.card-img-top img{
+  max-width: 170px;
+  max-height: 170px;
 }
-#card-4 .card-img-top{
-  padding: 20px 10px;
-  background: url(img/default/teste-dbz.png) no-repeat top center; 
-  background-size: 100%;
-  height: 160px;
+.name-item{
+  font-size: 15px;
+  color: #4527A0;
+  font-weight: bold;
+}
+.platform-item{
+  font-size: 13px;
+  color: #757575
+}
+.demand-item,
+.offert-item{
+  float: left;
+  margin-top: 15px;
+}
+.offert-item{
+  position: relative;
+  width: 100%;
+}
+.btn-offert{
+  padding: 8px 25px 6px;
+  background: #673AB7;  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #512DA8, #673AB7);  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #512DA8, #673AB7); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  color: #fff;
+  border-radius: 20px;
+  max-width: 145px;
+  font-weight: 700;
+  letter-spacing: 1px;
+  font-size: 18px;
+}
+.offert-item i{
+  display: block;
+  position: absolute;
+  font-size: 32px;
+  color: #D70000;
+  right: 0;
+  top: 3px;
+  cursor: pointer;
+}
+.card button{
+  padding: 10px 25px;
+  display: block;
+  border: none;
+  background: #1976D2;
+  position: absolute;
+  width: 100%;
+  bottom: 0;
+  left: 0;
+  font-size: 18px;
+  font-weight: 700;
+  letter-spacing: 1px;
+  border-top-right-radius: 0;
+  border-top-left-radius: 0;
 }
 </style>
 <body>
@@ -170,93 +218,101 @@
       </div>
       <div class="row">
         <div class="col-md-3">
-          <div class="card" id="card-1">
-            <div class="card-img-top"></div>
+          <div class="card">
+            <div class="card-img-top">
+              <img src="img/default/test-mario.png" alt="">
+            </div>
             <div class="card-body">
-              <p class="card-text">
+              <div class="card-text">
                 <div class="name-item">
                  Super Mario Odyssey 
                 </div>
                 <div class="platform-item">
                  Nintendo Switch
                 </div>
-                <button class="btn btn-primary">Ver Ofertas</button>
-                <div class="demand-item">
-                 Interessados: 22
+
+                <div class="offert-item text-center">
+                  <div class="btn-offert">R$ 160,00</div>
+                  <i class="fa fa-heart-o" aria-hidden="true"></i>
                 </div>
-                <div class="offert-item">
-                 Ofertas: 15
-                </div>
-              </p>
+              </div>
+
+              <button class="btn btn-primary"> + 15 Ofertas <i class="fa fa-arrow-right"></i></button>
+
             </div>
           </div>
         </div>
 
         <div class="col-md-3">
-          <div class="card" id="card-2">
-            <div class="card-img-top"></div>
+          <div class="card">
+            <div class="card-img-top">
+              <img src="img/default/teste-witcher.png" alt="">
+            </div>
             <div class="card-body">
-              <p class="card-text">
+              <div class="card-text">
                 <div class="name-item">
                  The Witcher 3 - Wild Hunt
                 </div>
                 <div class="platform-item">
-                 Playstation 4
+                 Playstation 3
                 </div>
-                <button class="btn btn-primary">Ver Ofertas</button>
-                <div class="demand-item">
-                 Interessados: 112
+
+                <div class="offert-item text-center">
+                  <div class="btn-offert">R$ 59,00</div>
+                  <i class="fa fa-heart-o" aria-hidden="true"></i>
                 </div>
-                <div class="offert-item">
-                 Ofertas: 30
-                </div>
-              </p>
+              </div>
+
+              <button class="btn btn-primary"> + 9 Ofertas <i class="fa fa-arrow-right"></i></button>
             </div>
           </div>
         </div>
 
         <div class="col-md-3">
           <div class="card" id="card-3">
-            <div class="card-img-top"></div>
+            <div class="card-img-top">
+              <img src="img/default/teste-pokemon.png" alt="">
+            </div>
             <div class="card-body">
-              <p class="card-text">
+              <div class="card-text">
                 <div class="name-item">
                  Pokémon Moon
                 </div>
                 <div class="platform-item">
                  Nintendo 3DS
                 </div>
-                <button class="btn btn-primary">Ver Ofertas</button>
-                <div class="demand-item">
-                 Interessados: 32
+                <div class="offert-item text-center">
+                  <div class="btn-offert">R$ 89,00</div>
+                  <i class="fa fa-heart-o" aria-hidden="true"></i>
                 </div>
-                <div class="offert-item">
-                 Ofertas: 10
-                </div>
-              </p>
+              </div>
+
+              <button class="btn btn-primary"> + 110 Ofertas <i class="fa fa-arrow-right"></i></button>
+
             </div>
           </div>
         </div>
 
         <div class="col-md-3">
           <div class="card" id="card-4">
-            <div class="card-img-top"></div>
+            <div class="card-img-top">
+              <img src="img/default/teste-dbz.png" alt="">
+            </div>
             <div class="card-body">
-              <p class="card-text">
+              <div class="card-text">
                 <div class="name-item">
                  Dragon Ball Fighter Z
                 </div>
                 <div class="platform-item">
                  Xbox One
                 </div>
-                <button class="btn btn-primary">Ver Ofertas</button>
-                <div class="demand-item">
-                 Interessados: 42
+                <div class="offert-item text-center">
+                  <div class="btn-offert">R$ 140,00</div>
+                  <i class="fa fa-heart-o" aria-hidden="true"></i>
                 </div>
-                <div class="offert-item">
-                 Ofertas: 8
-                </div>
-              </p>
+              </div>
+
+              <button class="btn btn-primary"> + 5 Ofertas <i class="fa fa-arrow-right"></i></button>
             </div>
           </div>
         </div>
