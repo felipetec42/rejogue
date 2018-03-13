@@ -1,0 +1,384 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="description" content="">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <!-- Title -->
+  <title>Rejogue - Vida infinita para os jogos</title>
+
+  <!-- Favicon -->
+  <link rel="icon" href="img/core-img/favicon.ico">
+  
+  <!-- Bootstrap 4.0.0 -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+  <!-- Core Stylesheet -->
+  <link href="style.css" rel="stylesheet">
+
+  <!-- Responsive CSS -->
+  <link href="css/responsive.css" rel="stylesheet">
+
+</head>
+<style>
+#main-search{
+  margin-top: 150px;
+  min-height: 70px;
+}
+#main-search form{
+  width: 50%;
+  display: block;
+  margin: 0 auto;
+}
+#main-search form input{
+  height: 50px;
+  border-top-left-radius: 30px;
+  border-bottom-left-radius: 30px;
+  padding: 5px 30px;
+}
+#main-search form button{
+  width: 70px;
+  border-top-right-radius: 30px;
+  border-bottom-right-radius: 30px;
+  color: #fff;
+  border: none;
+  font-size: 24px;
+  background: #005C97;  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #363795, #005C97);  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #363795, #005C97); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+#top-recents{
+  min-height: 600px;
+  border: 2px solid #ccc; 
+}
+.card{
+  border-radius: 10px;
+  -webkit-box-shadow: 3px 3px 30px 0px rgba(0,0,0,0.55);
+  -moz-box-shadow: 3px 3px 30px 0px rgba(0,0,0,0.55);
+  box-shadow: 3px 3px 30px 0px rgba(0,0,0,0.55);
+}
+#card-1 .card-img-top{
+  padding: 20px 10px;
+  background: url(img/default/test-mario.jpg) no-repeat top center; 
+  background-size: 100%;
+  height: 160px;
+}
+#card-2 .card-img-top{
+  padding: 20px 10px;
+  background: url(img/default/teste-witcher.png) no-repeat top center; 
+  background-size: 100%;
+  height: 160px;
+}
+#card-3 .card-img-top{
+  padding: 20px 10px;
+  background: url(img/default/teste-pokemon.png) no-repeat top center; 
+  background-size: 100%;
+  height: 160px;
+}
+#card-4 .card-img-top{
+  padding: 20px 10px;
+  background: url(img/default/teste-dbz.png) no-repeat top center; 
+  background-size: 100%;
+  height: 160px;
+}
+</style>
+<body>
+
+  <!-- ***** Header Area Start ***** -->
+  <header class="header_area sticky animated">
+    <div class="container-fluid">
+      <div class="row align-items-center">
+        <!-- Menu Area Start -->
+        <div class="col-12 col-lg-10">
+          <div class="menu_area">
+            <nav class="navbar navbar-expand-lg navbar-light">
+              <!-- Logo -->
+              <a class="navbar-brand" href="#">
+                <img src="img/core-img/logo.png" alt="" class="img-fluid">
+              </a>
+              <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#ca-navbar" aria-controls="ca-navbar" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+              <!-- Menu Area -->
+              <div class="collapse navbar-collapse" id="ca-navbar">
+                <ul class="navbar-nav ml-auto" id="nav">
+                  <li class="nav-item active"><a class="nav-link" href="#home">HOME</a></li>
+                  <li class="nav-item"><a class="nav-link" href="#about">SOBRE</a></li>
+                  <li class="nav-item"><a class="nav-link" href="#compra">COMPRA</a></li>
+                  <li class="nav-item"><a class="nav-link" href="#venda">VENDA</a></li>
+                  <li class="nav-item"><a class="nav-link" href="#contact">CONTATO</a></li>
+                </ul>
+                <div class="sing-up-button d-lg-none">
+                  <a href="#" data-toggle="modal" data-target="#modal-login">ENTRAR</a>
+                </div>
+              </div>
+            </nav>
+          </div>
+        </div>
+        <!-- Signup btn -->
+        <div class="col-12 col-lg-2">
+          <div class="sing-up-button d-none d-lg-block">
+            <a href="#" data-toggle="modal" data-target="#modal-login">ENTRAR</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+  <!-- ***** Header Area End ***** -->
+
+  <!-- ***** Search Input ***** -->
+  <section class="clearfix" id="main-search">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-12">
+          <form action="#">
+            <div class="input-group mb-3">
+              <input type="text" class="form-control" placeholder="Buscar...">
+              <div class="input-group-append">
+                <button class="btn btn-outline-secondary" type="button">
+                  <i class="fa fa-search"></i>
+                </button>
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- ***** Search Input End ***** -->
+
+  <!-- ***** Filters ***** -->
+  <section class="special-area bg-white section_padding_50" id="about">
+    <div class="container">
+      <div class="row">
+        <div class="col-12">
+          <h2></h2>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- ***** Filters End ***** -->
+
+  <!-- Top Recents -->
+  <section class="bg-white" id="top-recents">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-12">
+          <h2>Adicionados recentemente</h2>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-3">
+          <div class="card" id="card-1">
+            <div class="card-img-top"></div>
+            <div class="card-body">
+              <p class="card-text">
+                <div class="name-item">
+                 Super Mario Odyssey 
+                </div>
+                <div class="platform-item">
+                 Nintendo Switch
+                </div>
+                <button class="btn btn-primary">Ver Ofertas</button>
+                <div class="demand-item">
+                 Interessados: 22
+                </div>
+                <div class="offert-item">
+                 Ofertas: 15
+                </div>
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-3">
+          <div class="card" id="card-2">
+            <div class="card-img-top"></div>
+            <div class="card-body">
+              <p class="card-text">
+                <div class="name-item">
+                 The Witcher 3 - Wild Hunt
+                </div>
+                <div class="platform-item">
+                 Playstation 4
+                </div>
+                <button class="btn btn-primary">Ver Ofertas</button>
+                <div class="demand-item">
+                 Interessados: 112
+                </div>
+                <div class="offert-item">
+                 Ofertas: 30
+                </div>
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-3">
+          <div class="card" id="card-3">
+            <div class="card-img-top"></div>
+            <div class="card-body">
+              <p class="card-text">
+                <div class="name-item">
+                 Pokémon Moon
+                </div>
+                <div class="platform-item">
+                 Nintendo 3DS
+                </div>
+                <button class="btn btn-primary">Ver Ofertas</button>
+                <div class="demand-item">
+                 Interessados: 32
+                </div>
+                <div class="offert-item">
+                 Ofertas: 10
+                </div>
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-3">
+          <div class="card" id="card-4">
+            <div class="card-img-top"></div>
+            <div class="card-body">
+              <p class="card-text">
+                <div class="name-item">
+                 Dragon Ball Fighter Z
+                </div>
+                <div class="platform-item">
+                 Xbox One
+                </div>
+                <button class="btn btn-primary">Ver Ofertas</button>
+                <div class="demand-item">
+                 Interessados: 42
+                </div>
+                <div class="offert-item">
+                 Ofertas: 8
+                </div>
+              </p>
+            </div>
+          </div>
+        </div>
+
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Top Offered -->
+  <section class="" id="">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-12">
+
+        </div>
+      </div>
+    </div>
+  </section>
+  
+  <!-- Top Wanted -->
+  <section class="section-full studio-area" id="venda">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-12">
+
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ***** Contact Us Area Start ***** -->
+  <section class="footer-contact-area section_padding_100 clearfix" id="contact">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-6">
+          <!-- Heading Text  -->
+          <div class="section-heading">
+            <h2>Entre em contato!</h2>
+            <div class="line-shape"></div>
+          </div>
+          <div class="footer-text">
+            <p>
+              Ficou com alguma dúvida? Tem alguma reclamação ou até mesmo uma sugestão? <br>
+              Nos envie uma mensagem pelo formulário ao lado ou se preferir entre em contato pelo email abaixo.
+            </p>
+          </div>
+          <div class="email-text">
+            <p><span>Email:</span>contato@rejogue.com.br</p>
+          </div>
+        </div>
+        <div class="col-md-6">
+          <!-- Form Start-->
+          <div class="contact_from">
+            <form action="#" method="post">
+              <!-- Message Input Area Start -->
+              <div class="contact_input_area">
+                <div class="row">
+                  <!-- Single Input Area Start -->
+                  <div class="col-md-12">
+                    <div class="form-group">
+                      <input type="text" class="form-control" name="name" id="name" placeholder="Nome" required>
+                    </div>
+                  </div>
+                  <!-- Single Input Area Start -->
+                  <div class="col-md-12">
+                    <div class="form-group">
+                      <input type="email" class="form-control" name="email" id="email" placeholder="Email" required>
+                    </div>
+                  </div>
+                  <!-- Single Input Area Start -->
+                  <div class="col-12">
+                    <div class="form-group">
+                      <textarea name="message" class="form-control" id="message" cols="30" rows="4" placeholder="Mensagem *" required></textarea>
+                    </div>
+                  </div>
+                  <!-- Single Input Area Start -->
+                  <div class="col-12">
+                    <button type="submit" class="btn submit-btn">Enviar</button>
+                  </div>
+                </div>
+              </div>
+              <!-- Message Input Area End -->
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- ***** Contact Us Area End ***** -->
+
+  <!-- ***** Footer Area Start ***** -->
+  <footer class="footer-social-icon text-center section_padding_70 clearfix">
+    <!-- footer logo -->
+    <div class="footer-text">
+      <img src="img/core-img/logo-lg.png" alt="">
+    </div>
+    <!-- social icon-->
+    <div class="footer-social-icon">
+      <a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+      <a href="#"> <i class="fa fa-instagram" aria-hidden="true"></i></a>
+    </div>
+    <!-- Foooter Text-->
+    <div class="copyright-text">
+      <!-- ***** Removing this text is now allowed! This template is licensed under CC BY 3.0 ***** -->
+      <p>Copyright ©2018 Rejogue. Desenvolvido por <a href="http://tec42.com.br" target="_blank">TEC42</a></p>
+    </div>
+  </footer>
+  <!-- ***** Footer Area Start ***** -->
+
+  <!-- Jquery-2.2.4 JS -->
+  <script src="js/jquery-2.2.4.min.js"></script>
+  <!-- Popper js -->
+  <script src="js/popper.min.js"></script>
+  <!-- Bootstrap-4 Beta JS -->
+  <script src="js/bootstrap.min.js"></script>
+  <!-- All Plugins JS -->
+  <script src="js/plugins.js"></script>
+  <!-- Footer Reveal JS -->
+  <script src="js/footer-reveal.min.js"></script>
+  <!-- Active JS -->
+  <script src="js/active.js"></script>
+</body>
+
+</html>
