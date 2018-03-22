@@ -1,0 +1,371 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="description" content="">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <!-- Title -->
+  <title>Rejogue - Vida infinita para os jogos</title>
+
+  <!-- Favicon -->
+  <link rel="icon" href="img/core-img/favicon.ico">
+  
+  <!-- Bootstrap 4.0.0 -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+  <!-- Core Stylesheet -->
+  <link href="style.css" rel="stylesheet">
+
+  <!-- Responsive CSS -->
+  <link href="css/responsive.css" rel="stylesheet">
+
+</head>
+<style>
+  body{
+    background-color: #F4F9FC;
+  }
+  .item-header{
+    min-height: 600px;
+    margin-top: 70px;
+    color: #fdfdfd;
+    background-color: #F4F9FC;
+    position: relative;
+    padding-bottom: 30px;
+  }
+  .bg-nintendo{
+    background: #cb2d3e;
+    background: -webkit-linear-gradient(to right, #ef473a, #cb2d3e); 
+    background: linear-gradient(to right, #ef473a, #cb2d3e);
+    height: 500px;
+    position: absolute;
+    width: 100%;
+  }
+  .bg-ps4{
+    background: #0575E6;
+    background: -webkit-linear-gradient(to bottom, #021B79, #0575E6);
+    background: linear-gradient(to bottom, #021B79, #0575E6);
+    height: 500px;
+    position: absolute;
+    width: 100%;
+  }
+  .photo-item{
+    margin-top: 100px;
+  }
+  .about-item{
+    margin-top: 140px;
+  }
+  .name-item h2{
+    font-size: 26px;
+    color: #fdfdfd;
+    letter-spacing: .8px;
+    font-weight: bold;
+    padding-bottom: 15px;
+    border-bottom: 1px solid rgba(255,255,255, .6);
+  }
+  .specs-item{
+    font-size: 14px;
+    text-transform: uppercase;
+    color: #fdfdfd;
+    letter-spacing: .8px;
+    font-weight: bold;
+    padding-bottom: 15px;
+    padding-top: 15px;
+    border-bottom: 1px solid rgba(255,255,255, .6);
+  }
+  .release-date{
+    padding-right: 50px;
+  }
+  .description{
+    font-size: 14px;
+    color: #fdfdfd;
+    letter-spacing: .8px;
+    padding-bottom: 15px;
+    line-height: 26px;
+    padding-top: 15px;
+    border-bottom: 1px solid rgba(255,255,255, .6);
+  }
+  .btn-best-price{
+    padding: 5px 20px 0;
+    display: inline-block;
+    border: 2px solid #fefefe;
+    color: #fff;
+    background: transparent;
+    font-size: 10px;
+    font-weight: 700;
+    letter-spacing: 1px;
+    border-radius: 110px;
+    margin-top: 20px;
+    width: 230px;
+    float: left;
+  }
+  .btn-best-price .price{
+    font-size: 20px;
+  }
+  .header-item-action i{
+    font-size: 45px;
+    display: inline-block;
+    padding-top: 25px;
+    margin-left: 30px;
+    cursor: pointer;
+  }
+
+  .item-content{
+    min-height: 500px;
+    background-color: #F4F9FC;
+  }
+  .item-prices{
+
+  }
+  .item-prices .card{
+    padding: 15px;
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  .card-section{
+    padding: 10px;
+    border-bottom: 1px solid #ccc;
+  }
+  .offers-list .card{
+    padding: 15px;
+    margin-bottom: 20px;
+  }
+</style>
+<body>
+
+  <!-- ***** Header Area Start ***** -->
+  <header class="header_area sticky animated">
+    <div class="container-fluid">
+      <div class="row align-items-center">
+        <!-- Menu Area Start -->
+        <div class="col-12 col-lg-10">
+          <div class="menu_area">
+            <nav class="navbar navbar-expand-lg navbar-light">
+              <!-- Logo -->
+              <a class="navbar-brand" href="#">
+                <img src="img/core-img/logo.png" alt="" class="img-fluid">
+              </a>
+              <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#ca-navbar" aria-controls="ca-navbar" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+              <!-- Menu Area -->
+              <div class="collapse navbar-collapse" id="ca-navbar">
+                <ul class="navbar-nav ml-auto" id="nav">
+                  <li class="nav-item active"><a class="nav-link" href="#home">HOME</a></li>
+                  <li class="nav-item"><a class="nav-link" href="#about">SOBRE</a></li>
+                  <li class="nav-item"><a class="nav-link" href="#compra">COMPRA</a></li>
+                  <li class="nav-item"><a class="nav-link" href="#venda">VENDA</a></li>
+                  <li class="nav-item"><a class="nav-link" href="#contact">CONTATO</a></li>
+                </ul>
+                <div class="sing-up-button d-lg-none">
+                  <a href="#" data-toggle="modal" data-target="#modal-login">ENTRAR</a>
+                </div>
+              </div>
+            </nav>
+          </div>
+        </div>
+        <!-- Signup btn -->
+        <div class="col-12 col-lg-2">
+          <div class="sing-up-button d-none d-lg-block">
+            <a href="#" data-toggle="modal" data-target="#modal-login">ENTRAR</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+  <!-- ***** Header Area End ***** -->
+
+  <!-- Header Produto -->
+  <section class="item-header">
+    <div class="bg-ps4"> </div>
+    <div class="container">
+      <div class="row">
+
+        <div class="col-lg-4 photo-item">
+          <img src="img/default/teste-witcher.png" class="img-fluid">
+        </div>
+
+        <div class="col-lg-8 about-item">
+          <div class="row name-item">
+            <div class="col-md-12 p-0">
+              <h2>The Witcher 3: Wild Hunt</h2>
+            </div>
+          </div>
+          
+          <div class="row specs-item">
+            <div class="col-md-6 p-0">
+              <div class="type">RPG</div>
+            </div>
+            <div class="col-md-6 text-right p-0">
+              <span class="release-date">30/08/2016</span>
+              <span class="platform">PS4</span>
+            </div>
+          </div>
+          
+          <div class="row">
+            <div class="col-md-12 p-0">
+              <div class="description">
+                Esta edição possui o jogo completo + Hearts of Stone, Blood and Wine e 16 DLCs. The Witcher 3: Wild Hunt traz um novo e fantástico capítulo para a série. Com um mundo vasto incrivelmente rico e belo, o jogo surpreende pela sua história, complexidade e pela quantidade de opções possíveis para o jogador.
+              </div>
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="col-md-12 header-item-action p-0">
+              <button class="btn btn-best-price">MELHOR PREÇO <br> <span class="price">R$ 170,00</span></button>
+              <i class="fa fa-heart-o"></i>
+            </div>
+          </div>
+          
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PRECOS E OFERTAS -->
+  <section class="item-content">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-4 item-prices">
+          <div class="row">
+            <div class="col-md-12">
+              <h3 class="text-center">NOVO</h3>
+              <div class="card">
+                <div class="card-section">
+                  <div class="title">Média</div>
+                  <div class="price">R$ 230,40</div>
+                </div>
+                <div class="card-section">
+                  <div class="title">Menor Preço</div>
+                  <div class="price">R$ 219,00</div>
+                </div>
+                <div class="card-section">
+                  <div class="title">Maior Preço</div>
+                  <div class="price">R$ 280,40</div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="col-md-12">
+              <h3 class="text-center">USADO</h3>
+              <div class="card">
+                <div class="card-section">
+                  <div class="title">Média</div>
+                  <div class="price">R$ 177,40</div>
+                </div>
+                <div class="card-section">
+                  <div class="title">Menor Preço</div>
+                  <div class="price">R$ 175,00</div>
+                </div>
+                <div class="card-section">
+                  <div class="title">Maior Preço</div>
+                  <div class="price">R$ 200,40</div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="col-md-12">
+              <div class="card">
+                <div class="card-section">
+                  <div class="title">Média</div>
+                  <div class="price">R$ 177,40</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+        <div class="col-lg-8 offers-list">
+          <h3 class="text-center">Lista de Ofertas</h3>
+          <div class="row">
+            <div class="col-md-12">
+              <div class="card">
+                <div class="name">Diego Santana</div>
+                <div class="local">Ribeirão Pires - SP</div>
+                <div class="offer-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nobis et nam culpa expedita cumque suscipit tempora atque.cumque suscipit tempora atque.cumque suscipit tempora atque.</div>
+                <hr>
+                <div class="row">
+                  <div class="col-lg-4">Em Mãos - Correio</div>
+                  <div class="col-lg-4">(VIVO) 11 91234-5678</div>
+                  <div class="col-lg-4"> <button class="btn btn-primary">Ver Fotos</button></div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="col-md-12">
+              <div class="card">
+                <div class="name">Diego Santana</div>
+                <div class="local">Ribeirão Pires - SP</div>
+                <div class="offer-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nobis et nam culpa expedita cumque suscipit tempora atque.cumque suscipit tempora atque.cumque suscipit tempora atque.</div>
+                <hr>
+                <div class="row">
+                  <div class="col-lg-4">Em Mãos - Correio</div>
+                  <div class="col-lg-4">(VIVO) 11 91234-5678</div>
+                  <div class="col-lg-4"> <button class="btn btn-primary">Ver Fotos</button></div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="col-md-12">
+              <div class="card">
+                <div class="name">Diego Santana</div>
+                <div class="local">Ribeirão Pires - SP</div>
+                <div class="offer-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nobis et nam culpa expedita cumque suscipit tempora atque.cumque suscipit tempora atque.cumque suscipit tempora atque.</div>
+                <hr>
+                <div class="row">
+                  <div class="col-lg-4">Em Mãos - Correio</div>
+                  <div class="col-lg-4">(VIVO) 11 91234-5678</div>
+                  <div class="col-lg-4"> <button class="btn btn-primary">Ver Fotos</button></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+  
+
+  <!-- ***** Footer Area Start ***** -->
+  <footer class="footer-social-icon text-center section_padding_70 clearfix">
+    <!-- footer logo -->
+    <div class="footer-text">
+      <img src="img/core-img/logo-lg.png" alt="">
+    </div>
+    <!-- social icon-->
+    <div class="footer-social-icon">
+      <a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+      <a href="#"> <i class="fa fa-instagram" aria-hidden="true"></i></a>
+    </div>
+    <!-- Foooter Text-->
+    <div class="copyright-text">
+      <!-- ***** Removing this text is now allowed! This template is licensed under CC BY 3.0 ***** -->
+      <p>Copyright ©2018 Rejogue. Desenvolvido por <a href="http://tec42.com.br" target="_blank">TEC42</a></p>
+    </div>
+  </footer>
+  <!-- ***** Footer Area Start ***** -->
+
+  <!-- Jquery-2.2.4 JS -->
+  <script src="js/jquery-2.2.4.min.js"></script>
+  <!-- Popper js -->
+  <script src="js/popper.min.js"></script>
+  <!-- Bootstrap-4 Beta JS -->
+  <script src="js/bootstrap.min.js"></script>
+  <!-- All Plugins JS -->
+  <script src="js/plugins.js"></script>
+  <!-- Footer Reveal JS -->
+  <script src="js/footer-reveal.min.js"></script>
+  <!-- Active JS -->
+  <script src="js/active.js"></script>
+</body>
+
+</html>
