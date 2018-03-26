@@ -35,21 +35,13 @@
     position: relative;
     padding-bottom: 30px;
   }
-  .bg-nintendo{
-    background: #cb2d3e;
-    background: -webkit-linear-gradient(to right, #ef473a, #cb2d3e); 
-    background: linear-gradient(to right, #ef473a, #cb2d3e);
-    height: 500px;
-    position: absolute;
-    width: 100%;
-  }
   .bg-ps4{
     background: #0575E6;
-    background: -webkit-linear-gradient(to bottom, #021B79, #0575E6);
-    background: linear-gradient(to bottom, #021B79, #0575E6);
-    height: 500px;
-    position: absolute;
-    width: 100%;
+        background: -webkit-linear-gradient(to bottom, #021B79, #0575E6);
+        background: linear-gradient(to bottom, #021B79, #0575E6);
+        height: 500px;
+        position: absolute;
+        width: 100%;
   }
   .photo-item{
     margin-top: 100px;
@@ -129,8 +121,102 @@
     border-bottom: 1px solid #ccc;
   }
   .offers-list .card{
-    padding: 15px;
+    padding: 20px;
     margin-bottom: 20px;
+    border-radius: 8px;
+  }
+  .name{
+    font-size: 18px;
+    font-weight: bold;
+    color: #5400A2;
+  }
+  .local{
+    font-weight: bold;
+    font-size: 14px;
+    color: #757575;
+    margin-top: 5px;
+  }
+  .btn-cta{
+    padding: 5px 20px 0;
+    display: inline-block;
+    border: 2px solid #5400A2;
+    color: #fff;
+    background: #5400A2;
+    font-size: 20px;
+    font-weight: 700;
+    letter-spacing: 1px;
+    border-radius: 110px;
+    margin-top: -20px;
+  }
+  .btn-cta .cents{
+    font-size: 13px;
+    font-weight: 400;
+  }
+  .card-action i{
+    color: #5400A2;
+    font-size: 30px;
+    display: inline-block;
+    padding-top: 5px;
+    margin-left: 30px;
+    cursor: pointer;
+  }
+  .offer-text{
+    margin: 20px auto;
+    border-bottom: 1px solid #ccc;
+    border-top: 1px solid #ccc;
+    padding: 20px 0;
+    color: #616161;
+    letter-spacing: .7px;
+  }
+  .btn-fotos{
+    padding: 10px 20px 5px;
+    display: inline-block;
+    border: 2px solid #006DD5;
+    color: #fff;
+    background: #006DD5;
+    font-size: 16px;
+    font-weight: 700;
+    letter-spacing: 1px;
+    border-radius: 40px;
+    margin-top: 20px;
+    width: 90%;
+  }
+  .btn-delivery{
+    padding: 5px 10px;
+    display: inline-block;
+    border: 1px solid #FFA700;
+    color: #fff;
+    background: #FFA700;
+    font-size: 14px;
+    letter-spacing: 1px;
+    border-radius: 40px;
+    width: 90%;
+  }
+  .btn-delivery.secondary{
+    margin-top: 10px;
+  }
+  .btn-message{
+    padding: 5px 10px;
+    display: inline-block;
+    border: 1px solid #00AB4A;
+    color: #fff;
+    background: #00AB4A;
+    font-size: 14px;
+    letter-spacing: 1px;
+    border-radius: 40px;
+    width: 90%;
+  }
+  .btn-phone{
+    padding: 5px 10px;
+    display: inline-block;
+    border: 1px solid #7CB342;
+    color: #fff;
+    background: #7CB342;
+    font-size: 14px;
+    letter-spacing: 1px;
+    border-radius: 40px;
+    margin-top: 10px;
+    width: 90%;
   }
 </style>
 <body>
@@ -284,14 +370,72 @@
           <div class="row">
             <div class="col-md-12">
               <div class="card">
-                <div class="name">Diego Santana</div>
-                <div class="local">Ribeirão Pires - SP</div>
-                <div class="offer-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nobis et nam culpa expedita cumque suscipit tempora atque.cumque suscipit tempora atque.cumque suscipit tempora atque.</div>
-                <hr>
                 <div class="row">
-                  <div class="col-lg-4">Em Mãos - Correio</div>
-                  <div class="col-lg-4">(VIVO) 11 91234-5678</div>
-                  <div class="col-lg-4"> <button class="btn btn-primary">Ver Fotos</button></div>
+                  <div class="col-md-5">
+                    <div class="name">Diego Santana</div>
+                    <div class="local">Ribeirão Pires - SP</div>
+                  </div>
+                
+                  <div class="col-md-7 card-action text-right">
+                    <div class="btn-cta">
+                      <span>R$ 170</span><span class="cents">,00</span>
+                    </div>
+                    <i class="fa fa-heart-o"></i>
+                  </div>
+                </div>
+                <div class="offer-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nobis et nam culpa expedita cumque suscipit tempora atque.cumque suscipit tempora atque.cumque suscipit tempora atque.</div>
+
+                <div class="row">
+                  <div class="col-lg-4 text-center">
+                    <div class="btn-delivery">Entrega em mãos</div>
+                    <div class="btn-delivery secondary">Envio pelo Correio</div>
+                  </div>
+                  <div class="col-lg-4 text-center" style="border-left: 1px solid #cecece; border-right: 1px solid #cecece">
+                    <button class="btn btn-message">Enviar Mensagem</button>
+                    <div class="btn-phone text-center">
+                      (VIVO) 11 91234-5678
+                    </div>
+                  </div>
+                  <div class="col-lg-4 text-center"> 
+                    <button class="btn btn-fotos">Ver 5 Fotos</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          
+          <div class="row">
+            <div class="col-md-12">
+              <div class="card">
+                <div class="row">
+                  <div class="col-md-5">
+                    <div class="name">Diego Santana</div>
+                    <div class="local">Ribeirão Pires - SP</div>
+                  </div>
+                
+                  <div class="col-md-7 card-action text-right">
+                    <div class="btn-cta">
+                      <span>R$ 170</span><span class="cents">,00</span>
+                    </div>
+                    <i class="fa fa-heart-o"></i>
+                  </div>
+                </div>
+                <div class="offer-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nobis et nam culpa expedita cumque suscipit tempora atque.cumque suscipit tempora atque.cumque suscipit tempora atque.</div>
+
+                <div class="row">
+                  <div class="col-lg-4 text-center">
+                    <div class="btn-delivery">Entrega em mãos</div>
+                    <div class="btn-delivery secondary">Envio pelo Correio</div>
+                  </div>
+                  <div class="col-lg-4 text-center" style="border-left: 1px solid #cecece; border-right: 1px solid #cecece">
+                    <button class="btn btn-message">Enviar Mensagem</button>
+                    <div class="btn-phone text-center">
+                      (VIVO) 11 91234-5678
+                    </div>
+                  </div>
+                  <div class="col-lg-4 text-center"> 
+                    <button class="btn btn-fotos">Ver 5 Fotos</button>
+                  </div>
                 </div>
               </div>
             </div>
@@ -300,30 +444,35 @@
           <div class="row">
             <div class="col-md-12">
               <div class="card">
-                <div class="name">Diego Santana</div>
-                <div class="local">Ribeirão Pires - SP</div>
-                <div class="offer-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nobis et nam culpa expedita cumque suscipit tempora atque.cumque suscipit tempora atque.cumque suscipit tempora atque.</div>
-                <hr>
                 <div class="row">
-                  <div class="col-lg-4">Em Mãos - Correio</div>
-                  <div class="col-lg-4">(VIVO) 11 91234-5678</div>
-                  <div class="col-lg-4"> <button class="btn btn-primary">Ver Fotos</button></div>
+                  <div class="col-md-5">
+                    <div class="name">Diego Santana</div>
+                    <div class="local">Ribeirão Pires - SP</div>
+                  </div>
+                
+                  <div class="col-md-7 card-action text-right">
+                    <div class="btn-cta">
+                      <span>R$ 170</span><span class="cents">,00</span>
+                    </div>
+                    <i class="fa fa-heart-o"></i>
+                  </div>
                 </div>
-              </div>
-            </div>
-          </div>
-
-          <div class="row">
-            <div class="col-md-12">
-              <div class="card">
-                <div class="name">Diego Santana</div>
-                <div class="local">Ribeirão Pires - SP</div>
                 <div class="offer-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nobis et nam culpa expedita cumque suscipit tempora atque.cumque suscipit tempora atque.cumque suscipit tempora atque.</div>
-                <hr>
+
                 <div class="row">
-                  <div class="col-lg-4">Em Mãos - Correio</div>
-                  <div class="col-lg-4">(VIVO) 11 91234-5678</div>
-                  <div class="col-lg-4"> <button class="btn btn-primary">Ver Fotos</button></div>
+                  <div class="col-lg-4 text-center">
+                    <div class="btn-delivery">Entrega em mãos</div>
+                    <div class="btn-delivery secondary">Envio pelo Correio</div>
+                  </div>
+                  <div class="col-lg-4 text-center" style="border-left: 1px solid #cecece; border-right: 1px solid #cecece">
+                    <button class="btn btn-message">Enviar Mensagem</button>
+                    <div class="btn-phone text-center">
+                      (VIVO) 11 91234-5678
+                    </div>
+                  </div>
+                  <div class="col-lg-4 text-center"> 
+                    <button class="btn btn-fotos">Ver 5 Fotos</button>
+                  </div>
                 </div>
               </div>
             </div>
