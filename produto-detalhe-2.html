@@ -35,13 +35,14 @@
     position: relative;
     padding-bottom: 30px;
   }
-  .bg-ps4{
-    background: #0575E6;
-        background: -webkit-linear-gradient(to bottom, #021B79, #0575E6);
-        background: linear-gradient(to bottom, #021B79, #0575E6);
-        height: 500px;
-        position: absolute;
-        width: 100%;
+  .bg{
+    background: #5C258D;
+    background: -webkit-linear-gradient(left, #4389A2, #5C258D);
+    background: -o-linear-gradient(left, #4389A2, #5C258D);
+    background: linear-gradient(to right, #4389A2, #5C258D);
+    height: 500px;
+    position: absolute;
+    width: 100%;
   }
   .photo-item{
     margin-top: 100px;
@@ -109,17 +110,59 @@
     background-color: #F4F9FC;
   }
   .item-prices{
-
+    margin-top: 40px;
   }
   .item-prices .card{
-    padding: 15px;
-    text-align: center;
+    border-radius: 0;
     margin-bottom: 20px;
+    padding: 15px;
+    padding-top: 0;
+  }
+  .item-prices .card h3{
+    background-color: #3D5AFE;
+    color: #fff;
+    font-size: 20px;
+    padding: 10px 0 8px;
+    position: absolute;
+    display: block;
+    width: 100%;
+    left: 0;
   }
   .card-section{
-    padding: 10px;
-    border-bottom: 1px solid #ccc;
+    margin-top: 60px;
+    position: relative;
   }
+  .card-section .title{
+    color: #616161;
+  }
+  .card-section .price{
+    font-size: 36px;
+    color: #3D5AFE;
+  }
+  .card-section .cents{
+    font-size: 18px;
+    margin-left: -12px;
+  }
+  .btn-action-new-best,
+  .btn-action-new-offers{
+    padding: 10px 5px 7px;
+    display: block;
+    color: #00AB4A;
+    background: #f2f2f2;
+    font-size: 14px;
+    letter-spacing: .8px;
+    width: 150px;
+    text-align: center;
+    position: absolute;
+    top: 30px;
+    right: 5px;
+    cursor: pointer;
+    font-weight: bold;
+  }
+  .btn-action-new-offers{
+    top: 140px;
+  }
+
   .offers-list .card{
     padding: 20px;
     margin-bottom: 20px;
@@ -153,7 +196,7 @@
     font-weight: 400;
   }
   .card-action i{
-    color: #5400A2;
+    color: #D70000;
     font-size: 30px;
     display: inline-block;
     padding-top: 5px;
@@ -218,6 +261,8 @@
     margin-top: 10px;
     width: 90%;
   }
+
+  
 </style>
 <body>
 
@@ -230,7 +275,7 @@
           <div class="menu_area">
             <nav class="navbar navbar-expand-lg navbar-light">
               <!-- Logo -->
-              <a class="navbar-brand" href="#">
+              <a class="navbar-brand" href="index.html">
                 <img src="img/core-img/logo.png" alt="" class="img-fluid">
               </a>
               <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#ca-navbar" aria-controls="ca-navbar" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
@@ -263,7 +308,7 @@
 
   <!-- Header Produto -->
   <section class="item-header">
-    <div class="bg-ps4"> </div>
+    <div class="bg"> </div>
     <div class="container">
       <div class="row">
 
@@ -283,7 +328,7 @@
               <div class="type">RPG</div>
             </div>
             <div class="col-md-6 text-right p-0">
-              <span class="release-date">30/08/2016</span>
+              <span class="release-date">27/10/2017</span>
               <span class="platform">PS4</span>
             </div>
           </div>
@@ -315,39 +360,26 @@
         <div class="col-lg-4 item-prices">
           <div class="row">
             <div class="col-md-12">
-              <h3 class="text-center">NOVO</h3>
               <div class="card">
-                <div class="card-section">
-                  <div class="title">Média</div>
-                  <div class="price">R$ 230,40</div>
-                </div>
+                <h3 class="text-center">NOVO</h3>
                 <div class="card-section">
                   <div class="title">Menor Preço</div>
-                  <div class="price">R$ 219,00</div>
-                </div>
-                <div class="card-section">
-                  <div class="title">Maior Preço</div>
-                  <div class="price">R$ 280,40</div>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div class="row">
-            <div class="col-md-12">
-              <h3 class="text-center">USADO</h3>
-              <div class="card">
-                <div class="card-section">
-                  <div class="title">Média</div>
-                  <div class="price">R$ 177,40</div>
-                </div>
-                <div class="card-section">
-                  <div class="title">Menor Preço</div>
-                  <div class="price">R$ 175,00</div>
-                </div>
-                <div class="card-section">
-                  <div class="title">Maior Preço</div>
-                  <div class="price">R$ 200,40</div>
+                  <div class="price">
+                    <span class="full">R$ 219</span>
+                    <span class="cents">,00</span>
+                  </div>
+                  <div class="btn-action-new-best">
+                    VER OFERTA
+                  </div>
+                  <hr>
+                  <div class="title">Preço Médio</div>
+                  <div class="price">
+                    <span class="full">R$ 230</span>
+                    <span class="cents">,45</span>
+                  </div>
+                  <div class="btn-action-new-offers">
+                    VER OFERTAS
+                  </div>
                 </div>
               </div>
             </div>
@@ -356,9 +388,25 @@
           <div class="row">
             <div class="col-md-12">
               <div class="card">
+                <h3 class="text-center">USADO</h3>
                 <div class="card-section">
-                  <div class="title">Média</div>
-                  <div class="price">R$ 177,40</div>
+                  <div class="title">Menor Preço</div>
+                  <div class="price">
+                    <span class="full">R$ 219</span>
+                    <span class="cents">,00</span>
+                  </div>
+                  <div class="btn-action-new-best">
+                    VER OFERTA
+                  </div>
+                  <hr>
+                  <div class="title">Preço Médio</div>
+                  <div class="price">
+                    <span class="full">R$ 230</span>
+                    <span class="cents">,45</span>
+                  </div>
+                  <div class="btn-action-new-offers">
+                    VER OFERTAS
+                  </div>
                 </div>
               </div>
             </div>
