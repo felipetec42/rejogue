@@ -25,11 +25,12 @@
 </head>
 <style>
 body{
-  background-color: #f6f6f6;
+  background: #F4F9FC;
 }
 #main-search{
-  margin-top: 150px;
-  min-height: 70px;
+  margin-top: 70px;
+  min-height: 150px;
+  padding-top: 50px;
 }
 #main-search form{
   width: 50%;
@@ -53,18 +54,22 @@ body{
   background: -webkit-linear-gradient(to right, #363795, #005C97);  /* Chrome 10-25, Safari 5.1-6 */
   background: linear-gradient(to right, #363795, #005C97); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 }
-#top-recents{
-  background-color: #f6f6f6;
-  min-height: 600px;
+.top-section{
+  background: #F4F9FC;
+  min-height: 350px;
+  padding-top: 25px;
+  padding-bottom: 50px;
 }
-#top-recents h2{
+.top-section h2{
   margin-bottom: 20px;
+  color: #37474F;
+  text-transform: uppercase;
+  letter-spacing: .8px;
+  border-bottom: 1px solid #ccc;
+  font-size: 22px;
 }
 .card{
   border-radius: 5px;
-  /*-webkit-box-shadow: 3px 3px 30px 0px rgba(0,0,0,0.55);
-  -moz-box-shadow: 3px 3px 30px 0px rgba(0,0,0,0.55);
-  box-shadow: 3px 3px 30px 0px rgba(0,0,0,0.55);*/
   position: relative;
   min-height: 370px;
   margin-bottom: 20px;
@@ -174,7 +179,37 @@ body{
   text-transform: uppercase;
   padding: 10px 15px;
   margin-top: -10px;
+}
+.header_area.sticky{
+  padding-right: 0;
+}
+.btn-profile{
+  color: #fff;
+  letter-spacing: .9px;
+  font-weight: bold;
+  height: 75px;
+  padding-top: 10px;
+  margin-top: -8px;
+  min-width: 65%;
+  float: right;
+  text-align: left;
+  cursor: pointer;
+  padding-left: 20px;
+  background: #36D1DC;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, #5B86E5, #36D1DC);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, #5B86E5, #36D1DC); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 
+}
+.btn-profile img{
+  border-radius: 100%;
+  border: 2px solid #f7f7f7;
+  max-width: 55px;
+  max-height: 55px;
+  margin-right: 10px;
+}
+.btn-profile i{
+  padding-left: 5px;
+  padding-right: 15px;
 }
 </style>
 <body>
@@ -184,17 +219,21 @@ body{
     <div class="container-fluid">
       <div class="row align-items-center">
         <!-- Menu Area Start -->
-        <div class="col-12 col-lg-10">
+        <div class="col-12 col-lg-9">
           <div class="menu_area">
-            <nav class="navbar navbar-expand-lg navbar-light">
+            <nav class="navbar navbar-expand-lg navbar-light" style="position: relative;">
               <!-- Logo -->
               <a class="navbar-brand" href="#">
                 <img src="img/core-img/logo.png" alt="" class="img-fluid">
               </a>
               <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#ca-navbar" aria-controls="ca-navbar" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+
+              <div style="display: block; float: right; position: absolute; right: 0; top: 25px;">
+                <button data-toggle="modal" data-target="#modal-login" class="btn-vender">Quero Vender</button>
+              </div>
               <!-- Menu Area -->
               <div class="collapse navbar-collapse" id="ca-navbar">
-                <ul class="navbar-nav ml-auto" id="nav">
+                <ul class="navbar-nav ml-auto" id="nav" style="display: none;">
                   <li class="nav-item active">
                     <i class="fa fa-search"></i>
                     <a class="nav-link" href="busca.html">Buscar</a>
@@ -227,10 +266,11 @@ body{
             </nav>
           </div>
         </div>
-        <!-- Signup btn -->
-        <div class="col-12 col-lg-2">
-          <div class="d-none d-lg-block">
-            <button data-toggle="modal" data-target="#modal-login" class="btn-vender">Quero Vender</button>
+        <div class="col-lg-3 text-right p-0">
+          <div class="btn-profile">
+            <img src="img/default/profile.jpg">
+            <span>Felipe</span>
+            <i class="fa fa-chevron-down" aria-hidden="true"></i>
           </div>
         </div>
       </div>
@@ -239,7 +279,7 @@ body{
   <!-- ***** Header Area End ***** -->
 
   <!-- ***** Search Input ***** -->
-  <section class="clearfix" id="main-search">
+  <section class="clearfix" id="main-search" style="background-color: #fff;">
     <div class="container">
       <div class="row">
         <div class="col-lg-12">
@@ -260,19 +300,11 @@ body{
   <!-- ***** Search Input End ***** -->
 
   <!-- ***** Filters ***** -->
-  <section class="special-area section_padding_50" id="about">
-    <div class="container">
-      <div class="row">
-        <div class="col-12">
-          <h2></h2>
-        </div>
-      </div>
-    </div>
-  </section>
+
   <!-- ***** Filters End ***** -->
 
   <!-- Top Recents -->
-  <section id="top-recents">
+  <section id="top-recents" class="top-section">
     <div class="container">
       <div class="row">
         <div class="col-lg-12">
@@ -390,86 +422,240 @@ body{
   </section>
 
   <!-- Top Offered -->
-  <section class="" id="">
+  <section id="top-offered" class="top-section">
     <div class="container">
       <div class="row">
         <div class="col-lg-12">
-
+          <h2>Mais ofertados</h2>
         </div>
+      </div>
+      <div class="row">
+        <div class="col-md-3">
+          <div class="card">
+            <div class="card-img-top">
+              <img src="img/default/test-mario.png" alt="">
+            </div>
+            <div class="card-body">
+              <div class="card-text">
+                <div class="name-item">
+                 Super Mario Odyssey 
+                </div>
+                <div class="platform-item">
+                 Nintendo Switch
+                </div>
+
+                <div class="offert-item text-center">
+                  <div class="btn-offert">R$ 160,00</div>
+                  <i class="fa fa-heart-o" aria-hidden="true"></i>
+                </div>
+              </div>
+              <a href="produto-detalhe.html">
+                <button class="btn btn-primary"> + 15 Ofertas <i class="fa fa-arrow-right"></i></button>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-3">
+          <div class="card">
+            <div class="card-img-top">
+              <img src="img/default/teste-witcher.png" alt="">
+            </div>
+            <div class="card-body">
+              <div class="card-text">
+                <div class="name-item">
+                 The Witcher 3 - Wild Hunt
+                </div>
+                <div class="platform-item">
+                 Playstation 3
+                </div>
+
+                <div class="offert-item text-center">
+                  <div class="btn-offert">R$ 59,00</div>
+                  <i class="fa fa-heart-o" aria-hidden="true"></i>
+                </div>
+              </div>
+
+              <a href="produto-detalhe-2.html">
+                <button class="btn btn-primary"> + 15 Ofertas <i class="fa fa-arrow-right"></i></button>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-3">
+          <div class="card" id="card-3">
+            <div class="card-img-top">
+              <img src="img/default/teste-pokemon.png" alt="">
+            </div>
+            <div class="card-body">
+              <div class="card-text">
+                <div class="name-item">
+                 Pokémon Moon
+                </div>
+                <div class="platform-item">
+                 Nintendo 3DS
+                </div>
+                <div class="offert-item text-center">
+                  <div class="btn-offert">R$ 89,00</div>
+                  <i class="fa fa-heart-o" aria-hidden="true"></i>
+                </div>
+              </div>
+              <a href="produto-detalhe-4.html">
+                <button class="btn btn-primary"> + 110 Ofertas <i class="fa fa-arrow-right"></i></button>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-3">
+          <div class="card" id="card-4">
+            <div class="card-img-top">
+              <img src="img/default/teste-dbz.png" alt="">
+            </div>
+            <div class="card-body">
+              <div class="card-text">
+                <div class="name-item">
+                 Dragon Ball Fighter Z
+                </div>
+                <div class="platform-item">
+                 Xbox One
+                </div>
+                <div class="offert-item text-center">
+                  <div class="btn-offert">R$ 140,00</div>
+                  <i class="fa fa-heart-o" aria-hidden="true"></i>
+                </div>
+              </div>
+
+              <a href="produto-detalhe-3.html">
+                <button class="btn btn-primary"> + 15 Ofertas <i class="fa fa-arrow-right"></i></button>
+              </a>
+            </div>
+          </div>
+        </div>
+
+
       </div>
     </div>
   </section>
   
   <!-- Top Wanted -->
-  <section class="section-full studio-area" id="venda">
+  <section id="top-wanted" class="top-section">
     <div class="container">
       <div class="row">
         <div class="col-lg-12">
-
+          <h2>Mais procurados</h2>
         </div>
       </div>
-    </div>
-  </section>
-
-  <!-- ***** Contact Us Area Start ***** -->
-  <section class="footer-contact-area section_padding_100 clearfix" id="contact">
-    <div class="container">
       <div class="row">
-        <div class="col-md-6">
-          <!-- Heading Text  -->
-          <div class="section-heading">
-            <h2>Entre em contato!</h2>
-            <div class="line-shape"></div>
-          </div>
-          <div class="footer-text">
-            <p>
-              Ficou com alguma dúvida? Tem alguma reclamação ou até mesmo uma sugestão? <br>
-              Nos envie uma mensagem pelo formulário ao lado ou se preferir entre em contato pelo email abaixo.
-            </p>
-          </div>
-          <div class="email-text">
-            <p><span>Email:</span>contato@rejogue.com.br</p>
-          </div>
-        </div>
-        <div class="col-md-6">
-          <!-- Form Start-->
-          <div class="contact_from">
-            <form action="#" method="post">
-              <!-- Message Input Area Start -->
-              <div class="contact_input_area">
-                <div class="row">
-                  <!-- Single Input Area Start -->
-                  <div class="col-md-12">
-                    <div class="form-group">
-                      <input type="text" class="form-control" name="name" id="name" placeholder="Nome" required>
-                    </div>
-                  </div>
-                  <!-- Single Input Area Start -->
-                  <div class="col-md-12">
-                    <div class="form-group">
-                      <input type="email" class="form-control" name="email" id="email" placeholder="Email" required>
-                    </div>
-                  </div>
-                  <!-- Single Input Area Start -->
-                  <div class="col-12">
-                    <div class="form-group">
-                      <textarea name="message" class="form-control" id="message" cols="30" rows="4" placeholder="Mensagem *" required></textarea>
-                    </div>
-                  </div>
-                  <!-- Single Input Area Start -->
-                  <div class="col-12">
-                    <button type="submit" class="btn submit-btn">Enviar</button>
-                  </div>
+        <div class="col-md-3">
+          <div class="card">
+            <div class="card-img-top">
+              <img src="img/default/test-mario.png" alt="">
+            </div>
+            <div class="card-body">
+              <div class="card-text">
+                <div class="name-item">
+                 Super Mario Odyssey 
+                </div>
+                <div class="platform-item">
+                 Nintendo Switch
+                </div>
+
+                <div class="offert-item text-center">
+                  <div class="btn-offert">R$ 160,00</div>
+                  <i class="fa fa-heart-o" aria-hidden="true"></i>
                 </div>
               </div>
-              <!-- Message Input Area End -->
-            </form>
+              <a href="produto-detalhe.html">
+                <button class="btn btn-primary"> + 15 Ofertas <i class="fa fa-arrow-right"></i></button>
+              </a>
+            </div>
           </div>
         </div>
+
+        <div class="col-md-3">
+          <div class="card">
+            <div class="card-img-top">
+              <img src="img/default/teste-witcher.png" alt="">
+            </div>
+            <div class="card-body">
+              <div class="card-text">
+                <div class="name-item">
+                 The Witcher 3 - Wild Hunt
+                </div>
+                <div class="platform-item">
+                 Playstation 3
+                </div>
+
+                <div class="offert-item text-center">
+                  <div class="btn-offert">R$ 59,00</div>
+                  <i class="fa fa-heart-o" aria-hidden="true"></i>
+                </div>
+              </div>
+
+              <a href="produto-detalhe-2.html">
+                <button class="btn btn-primary"> + 15 Ofertas <i class="fa fa-arrow-right"></i></button>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-3">
+          <div class="card" id="card-3">
+            <div class="card-img-top">
+              <img src="img/default/teste-pokemon.png" alt="">
+            </div>
+            <div class="card-body">
+              <div class="card-text">
+                <div class="name-item">
+                 Pokémon Moon
+                </div>
+                <div class="platform-item">
+                 Nintendo 3DS
+                </div>
+                <div class="offert-item text-center">
+                  <div class="btn-offert">R$ 89,00</div>
+                  <i class="fa fa-heart-o" aria-hidden="true"></i>
+                </div>
+              </div>
+              <a href="produto-detalhe-4.html">
+                <button class="btn btn-primary"> + 110 Ofertas <i class="fa fa-arrow-right"></i></button>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-3">
+          <div class="card" id="card-4">
+            <div class="card-img-top">
+              <img src="img/default/teste-dbz.png" alt="">
+            </div>
+            <div class="card-body">
+              <div class="card-text">
+                <div class="name-item">
+                 Dragon Ball Fighter Z
+                </div>
+                <div class="platform-item">
+                 Xbox One
+                </div>
+                <div class="offert-item text-center">
+                  <div class="btn-offert">R$ 140,00</div>
+                  <i class="fa fa-heart-o" aria-hidden="true"></i>
+                </div>
+              </div>
+
+              <a href="produto-detalhe-3.html">
+                <button class="btn btn-primary"> + 15 Ofertas <i class="fa fa-arrow-right"></i></button>
+              </a>
+            </div>
+          </div>
+        </div>
+
+
       </div>
     </div>
   </section>
-  <!-- ***** Contact Us Area End ***** -->
 
   <!-- ***** Footer Area Start ***** -->
   <footer class="footer-social-icon text-center section_padding_70 clearfix">
