@@ -136,6 +136,46 @@ body{
   border-top-right-radius: 0;
   border-top-left-radius: 0;
 }
+.header_area.sticky{
+  height: 75px;
+}
+#nav .nav-item{
+  text-align: center;
+  height: 72px;
+  letter-spacing: .6px;
+}
+#nav .nav-item i{
+  font-size: 24px;
+  color: #fff;
+  padding-top: 10px;
+}
+#nav .nav-item.active{
+  border-bottom: 3px solid #FFB300;
+}
+.header_area.sticky .menu_area #nav .nav-link{
+  padding: 2px 15px;
+  text-transform: uppercase;
+}
+.btn-vender{
+  background: #FF512F;  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #F09819, #FF512F);  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #F09819, #FF512F);
+  color: #fff;
+  display: inline-block;
+  font-weight: bold;
+  letter-spacing: .7px;
+  border: none;
+  min-width: 167px;
+  text-align: center;
+  border-radius: 24px 24px 24px 0px;
+  margin-left: 10px;
+  cursor: pointer;
+  font-size: 16px;
+  text-transform: uppercase;
+  padding: 10px 15px;
+  margin-top: -10px;
+
+}
 </style>
 <body>
 
@@ -155,14 +195,33 @@ body{
               <!-- Menu Area -->
               <div class="collapse navbar-collapse" id="ca-navbar">
                 <ul class="navbar-nav ml-auto" id="nav">
-                  <li class="nav-item active"><a class="nav-link" href="#home">HOME</a></li>
-                  <li class="nav-item"><a class="nav-link" href="#about">SOBRE</a></li>
-                  <li class="nav-item"><a class="nav-link" href="#compra">COMPRA</a></li>
-                  <li class="nav-item"><a class="nav-link" href="#venda">VENDA</a></li>
-                  <li class="nav-item"><a class="nav-link" href="#contact">CONTATO</a></li>
+                  <li class="nav-item active">
+                    <i class="fa fa-search"></i>
+                    <a class="nav-link" href="busca.html">Buscar</a>
+                  </li>
+                  <li class="nav-item">
+                    <i class="fa fa-comments"></i>
+                    <a class="nav-link" href="mensagens.hmtl">Mensagens</a>
+                  </li>
+                  <li class="nav-item">
+                    <i class="fa fa-star"></i>
+                    <a class="nav-link" href="mensagens.hmtl">Meus Anúncios</a>
+                  </li>
+                  <li class="nav-item">
+                    <i class="fa fa-heart"></i>
+                    <a class="nav-link" href="favoritos.html">Favoritos</a>
+                  </li>
+                  <li class="nav-item">
+                    <i class="fa fa-user-circle" aria-hidden="true"></i>
+                    <a class="nav-link" href="perfil.html">Meu Perfil</a>
+                  </li>
+                  <li class="nav-item">
+                    <i class="fa fa-power-off" aria-hidden="true"></i>
+                    <a class="nav-link" href="index.html">Sair</a>
+                  </li>
                 </ul>
-                <div class="sing-up-button d-lg-none">
-                  <a href="#" data-toggle="modal" data-target="#modal-login">ENTRAR</a>
+                <div class="btn-vender d-lg-none">
+                  <a href="#" data-toggle="modal" data-target="#modal-login">Quero Vender</a>
                 </div>
               </div>
             </nav>
@@ -170,8 +229,8 @@ body{
         </div>
         <!-- Signup btn -->
         <div class="col-12 col-lg-2">
-          <div class="sing-up-button d-none d-lg-block">
-            <a href="#" data-toggle="modal" data-target="#modal-login">ENTRAR</a>
+          <div class="d-none d-lg-block">
+            <button data-toggle="modal" data-target="#modal-login" class="btn-vender">Quero Vender</button>
           </div>
         </div>
       </div>

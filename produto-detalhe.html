@@ -25,7 +25,7 @@
 </head>
 <style>
   body{
-    background-color: #F4F9FC;
+    background-color: #90A4AE;
   }
   .item-header{
     min-height: 600px;
@@ -40,15 +40,16 @@
     background: -webkit-linear-gradient(left, #4389A2, #5C258D);
     background: -o-linear-gradient(left, #4389A2, #5C258D);
     background: linear-gradient(to right, #4389A2, #5C258D);
-    height: 500px;
+    height: 550px;
     position: absolute;
     width: 100%;
   }
   .photo-item{
-    margin-top: 100px;
+    margin-top: 60px;
   }
+
   .about-item{
-    margin-top: 140px;
+    margin-top: 90px;
   }
   .name-item h2{
     font-size: 26px;
@@ -108,6 +109,7 @@
   .item-content{
     min-height: 500px;
     background-color: #F4F9FC;
+    padding-bottom: 80px;
   }
   .item-prices{
     margin-top: 40px;
@@ -117,6 +119,7 @@
     margin-bottom: 20px;
     padding: 15px;
     padding-top: 0;
+    border: 2px solid #ccc;
   }
   .item-prices .card h3{
     background-color: #3D5AFE;
@@ -162,11 +165,17 @@
   .btn-action-new-offers{
     top: 140px;
   }
-
+  
+  .offers-list h3{
+    color: #37474F;
+    text-transform: uppercase;
+    letter-spacing: .8px;
+  }
   .offers-list .card{
     padding: 20px;
     margin-bottom: 20px;
     border-radius: 8px;
+    border: 2px solid #ccc;
   }
   .name{
     font-size: 18px;
@@ -204,64 +213,80 @@
     cursor: pointer;
   }
   .offer-text{
-    margin: 20px auto;
+    margin: 15px auto;
     border-bottom: 1px solid #ccc;
     border-top: 1px solid #ccc;
     padding: 20px 0;
-    color: #616161;
+    color: #9E9E9E;
+    font-weight: bold;
     letter-spacing: .7px;
   }
   .btn-fotos{
-    padding: 10px 20px 5px;
+    padding: 6px 15px 3px;
     display: inline-block;
-    border: 2px solid #006DD5;
+    border: 1px solid #006DD5;
     color: #fff;
     background: #006DD5;
-    font-size: 16px;
+    font-size: 15px;
     font-weight: 700;
-    letter-spacing: 1px;
-    border-radius: 40px;
-    margin-top: 20px;
+    letter-spacing: .8px;
+    border-radius: 10px;
     width: 90%;
   }
   .btn-delivery{
     padding: 5px 10px;
     display: inline-block;
-    border: 1px solid #FFA700;
-    color: #fff;
-    background: #FFA700;
-    font-size: 14px;
+    color: #FFA700;
+    font-size: 13px;
     letter-spacing: 1px;
-    border-radius: 40px;
-    width: 90%;
-  }
-  .btn-delivery.secondary{
-    margin-top: 10px;
+    font-weight: bold;
+    text-align: center;
   }
   .btn-message{
-    padding: 5px 10px;
+    padding: 5px 15px;
     display: inline-block;
     border: 1px solid #00AB4A;
     color: #fff;
     background: #00AB4A;
     font-size: 14px;
-    letter-spacing: 1px;
-    border-radius: 40px;
-    width: 90%;
+    letter-spacing: .7px;
+    border-radius: 10px;
+    width: 100%;
   }
   .btn-phone{
     padding: 5px 10px;
     display: inline-block;
-    border: 1px solid #7CB342;
-    color: #fff;
-    background: #7CB342;
-    font-size: 14px;
+    color: #7CB342;
+    font-size: 15px;
     letter-spacing: 1px;
-    border-radius: 40px;
-    margin-top: 10px;
-    width: 90%;
+    font-weight: bold;
   }
 
+  #main-search{
+    padding-top: 30px;
+  }
+  #main-search form{
+    width: 50%;
+    display: block;
+    margin: 0 auto;
+  }
+  #main-search form input{
+    height: 50px;
+    border-top-left-radius: 30px;
+    border-bottom-left-radius: 30px;
+    padding: 8px 30px 3px;
+  }
+  #main-search form button{
+    width: 70px;
+    border-top-right-radius: 30px;
+    border-bottom-right-radius: 30px;
+    color: #fff;
+    border: none;
+    font-size: 24px;
+    background: #005C97;
+    background: -webkit-linear-gradient(to right, #363795, #005C97);
+    background: linear-gradient(to right, #363795, #005C97);
+  }
   
 </style>
 <body>
@@ -309,6 +334,24 @@
   <!-- Header Produto -->
   <section class="item-header">
     <div class="bg"> </div>
+    <section id="main-search">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-12">
+            <form action="#">
+              <div class="input-group mb-3">
+                <input type="text" class="form-control" placeholder="Buscar...">
+                <div class="input-group-append">
+                  <button class="btn btn-outline-secondary" type="button">
+                    <i class="fa fa-search"></i>
+                  </button>
+                </div>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
     <div class="container">
       <div class="row">
 
@@ -419,70 +462,42 @@
             <div class="col-md-12">
               <div class="card">
                 <div class="row">
-                  <div class="col-md-5">
+                  <div class="col-md-4">
                     <div class="name">Diego Santana</div>
                     <div class="local">Ribeirão Pires - SP</div>
                   </div>
-                
-                  <div class="col-md-7 card-action text-right">
+                  <div class="col-md-4 text-center">
+                    <div class="btn-delivery">Entrega em mãos</div>
+                    <div class="btn-delivery secondary">Envio pelo Correio</div>
+                  </div>
+                  <div class="col-md-4 card-action text-right">
                     <div class="btn-cta">
                       <span>R$ 170</span><span class="cents">,00</span>
                     </div>
                     <i class="fa fa-heart-o"></i>
                   </div>
                 </div>
-                <div class="offer-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nobis et nam culpa expedita cumque suscipit tempora atque.cumque suscipit tempora atque.cumque suscipit tempora atque.</div>
+                <div class="offer-text">
+                  Jogo em excelente estado! Estou vendendo porque já zerei e preciso da grana.
+                </div>
 
                 <div class="row">
-                  <div class="col-lg-4 text-center">
-                    <div class="btn-delivery">Entrega em mãos</div>
-                    <div class="btn-delivery secondary">Envio pelo Correio</div>
+                  <div class="col-lg-4">
+                    <div class="btn-phone text-center">
+                      (11) 91234-5678
+                    </div>
                   </div>
                   <div class="col-lg-4 text-center" style="border-left: 1px solid #cecece; border-right: 1px solid #cecece">
-                    <button class="btn btn-message">Enviar Mensagem</button>
-                    <div class="btn-phone text-center">
-                      (VIVO) 11 91234-5678
-                    </div>
+                    <button class="btn btn-message">
+                      <i class="fa fa-comment"></i>
+                      Enviar Mensagem
+                    </button>                
                   </div>
-                  <div class="col-lg-4 text-center"> 
-                    <button class="btn btn-fotos">Ver 5 Fotos</button>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-          
-          <div class="row">
-            <div class="col-md-12">
-              <div class="card">
-                <div class="row">
-                  <div class="col-md-5">
-                    <div class="name">Diego Santana</div>
-                    <div class="local">Ribeirão Pires - SP</div>
-                  </div>
-                
-                  <div class="col-md-7 card-action text-right">
-                    <div class="btn-cta">
-                      <span>R$ 170</span><span class="cents">,00</span>
-                    </div>
-                    <i class="fa fa-heart-o"></i>
-                  </div>
-                </div>
-                <div class="offer-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nobis et nam culpa expedita cumque suscipit tempora atque.cumque suscipit tempora atque.cumque suscipit tempora atque.</div>
-
-                <div class="row">
-                  <div class="col-lg-4 text-center">
-                    <div class="btn-delivery">Entrega em mãos</div>
-                    <div class="btn-delivery secondary">Envio pelo Correio</div>
-                  </div>
-                  <div class="col-lg-4 text-center" style="border-left: 1px solid #cecece; border-right: 1px solid #cecece">
-                    <button class="btn btn-message">Enviar Mensagem</button>
-                    <div class="btn-phone text-center">
-                      (VIVO) 11 91234-5678
-                    </div>
-                  </div>
-                  <div class="col-lg-4 text-center"> 
-                    <button class="btn btn-fotos">Ver 5 Fotos</button>
+                  <div class="col-md-4 text-center"> 
+                    <button class="btn btn-fotos">
+                      <i class="fa fa-camera" aria-hidden="true"></i>
+                      Ver 5 Fotos
+                    </button>
                   </div>
                 </div>
               </div>
@@ -493,38 +508,140 @@
             <div class="col-md-12">
               <div class="card">
                 <div class="row">
-                  <div class="col-md-5">
+                  <div class="col-md-4">
                     <div class="name">Diego Santana</div>
                     <div class="local">Ribeirão Pires - SP</div>
                   </div>
-                
-                  <div class="col-md-7 card-action text-right">
+                  <div class="col-md-4 text-center">
+                    <div class="btn-delivery">Entrega em mãos</div>
+                    <div class="btn-delivery secondary">Envio pelo Correio</div>
+                  </div>
+                  <div class="col-md-4 card-action text-right">
                     <div class="btn-cta">
                       <span>R$ 170</span><span class="cents">,00</span>
                     </div>
                     <i class="fa fa-heart-o"></i>
                   </div>
                 </div>
-                <div class="offer-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nobis et nam culpa expedita cumque suscipit tempora atque.cumque suscipit tempora atque.cumque suscipit tempora atque.</div>
+                <div class="offer-text">
+                  Jogo em excelente estado! Estou vendendo porque já zerei e preciso da grana.
+                </div>
 
                 <div class="row">
-                  <div class="col-lg-4 text-center">
-                    <div class="btn-delivery">Entrega em mãos</div>
-                    <div class="btn-delivery secondary">Envio pelo Correio</div>
-                  </div>
-                  <div class="col-lg-4 text-center" style="border-left: 1px solid #cecece; border-right: 1px solid #cecece">
-                    <button class="btn btn-message">Enviar Mensagem</button>
+                  <div class="col-lg-4">
                     <div class="btn-phone text-center">
-                      (VIVO) 11 91234-5678
+                      (11) 91234-5678
                     </div>
                   </div>
-                  <div class="col-lg-4 text-center"> 
-                    <button class="btn btn-fotos">Ver 5 Fotos</button>
+                  <div class="col-lg-4 text-center" style="border-left: 1px solid #cecece; border-right: 1px solid #cecece">
+                    <button class="btn btn-message">
+                      <i class="fa fa-comment"></i>
+                      Enviar Mensagem
+                    </button>                
+                  </div>
+                  <div class="col-md-4 text-center"> 
+                    <button class="btn btn-fotos">
+                      <i class="fa fa-camera" aria-hidden="true"></i>
+                      Ver 5 Fotos
+                    </button>
                   </div>
                 </div>
               </div>
             </div>
           </div>
+
+          <div class="row">
+            <div class="col-md-12">
+              <div class="card">
+                <div class="row">
+                  <div class="col-md-4">
+                    <div class="name">Diego Santana</div>
+                    <div class="local">Ribeirão Pires - SP</div>
+                  </div>
+                  <div class="col-md-4 text-center">
+                    <div class="btn-delivery">Entrega em mãos</div>
+                    <div class="btn-delivery secondary">Envio pelo Correio</div>
+                  </div>
+                  <div class="col-md-4 card-action text-right">
+                    <div class="btn-cta">
+                      <span>R$ 170</span><span class="cents">,00</span>
+                    </div>
+                    <i class="fa fa-heart-o"></i>
+                  </div>
+                </div>
+                <div class="offer-text">
+                  Jogo em excelente estado! Estou vendendo porque já zerei e preciso da grana.
+                </div>
+
+                <div class="row">
+                  <div class="col-lg-4">
+                    <div class="btn-phone text-center">
+                      (11) 91234-5678
+                    </div>
+                  </div>
+                  <div class="col-lg-4 text-center" style="border-left: 1px solid #cecece; border-right: 1px solid #cecece">
+                    <button class="btn btn-message">
+                      <i class="fa fa-comment"></i>
+                      Enviar Mensagem
+                    </button>                
+                  </div>
+                  <div class="col-md-4 text-center"> 
+                    <button class="btn btn-fotos">
+                      <i class="fa fa-camera" aria-hidden="true"></i>
+                      Ver 5 Fotos
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="col-md-12">
+              <div class="card">
+                <div class="row">
+                  <div class="col-md-4">
+                    <div class="name">Diego Santana</div>
+                    <div class="local">Ribeirão Pires - SP</div>
+                  </div>
+                  <div class="col-md-4 text-center">
+                    <div class="btn-delivery">Entrega em mãos</div>
+                    <div class="btn-delivery secondary">Envio pelo Correio</div>
+                  </div>
+                  <div class="col-md-4 card-action text-right">
+                    <div class="btn-cta">
+                      <span>R$ 170</span><span class="cents">,00</span>
+                    </div>
+                    <i class="fa fa-heart-o"></i>
+                  </div>
+                </div>
+                <div class="offer-text">
+                  Jogo em excelente estado! Estou vendendo porque já zerei e preciso da grana.
+                </div>
+
+                <div class="row">
+                  <div class="col-lg-4">
+                    <div class="btn-phone text-center">
+                      (11) 91234-5678
+                    </div>
+                  </div>
+                  <div class="col-lg-4 text-center" style="border-left: 1px solid #cecece; border-right: 1px solid #cecece">
+                    <button class="btn btn-message">
+                      <i class="fa fa-comment"></i>
+                      Enviar Mensagem
+                    </button>                
+                  </div>
+                  <div class="col-md-4 text-center"> 
+                    <button class="btn btn-fotos">
+                      <i class="fa fa-camera" aria-hidden="true"></i>
+                      Ver 5 Fotos
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
         </div>
 
       </div>
