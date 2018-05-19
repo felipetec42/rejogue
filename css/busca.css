@@ -1,0 +1,117 @@
+body{
+  background: #F4F9FC;
+}
+#main-search{
+  margin-top: 70px;
+  min-height: 150px;
+  padding-top: 50px;
+}
+#main-search form{
+  width: 50%;
+  display: block;
+  margin: 0 auto;
+}
+#main-search form input{
+  height: 50px;
+  border-top-left-radius: 30px;
+  border-bottom-left-radius: 30px;
+  padding: 5px 30px;
+}
+#main-search form button{
+  width: 70px;
+  border-top-right-radius: 30px;
+  border-bottom-right-radius: 30px;
+  color: #fff;
+  border: none;
+  font-size: 24px;
+  background: #005C97;  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #363795, #005C97);  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #363795, #005C97); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+.top-section{
+  background: #F4F9FC;
+  min-height: 350px;
+  padding-top: 25px;
+  padding-bottom: 50px;
+}
+.top-section h2{
+  margin-bottom: 20px;
+  color: #37474F;
+  text-transform: uppercase;
+  letter-spacing: .8px;
+  border-bottom: 1px solid #ccc;
+  font-size: 22px;
+}
+.card{
+  border-radius: 5px;
+  position: relative;
+  min-height: 370px;
+  margin-bottom: 20px;
+}
+.card-body{
+  padding: 10px 15px;
+}
+.card-img-top{
+  padding: 10px 10px;
+  min-height: 160px;
+  text-align: center;
+  border-bottom: 1px solid #ccc
+}
+.card-img-top img{
+  max-width: 170px;
+  max-height: 170px;
+}
+.name-item{
+  font-size: 15px;
+  color: #4527A0;
+  font-weight: bold;
+}
+.platform-item{
+  font-size: 13px;
+  color: #757575
+}
+.demand-item,
+.offert-item{
+  float: left;
+  margin-top: 15px;
+}
+.offert-item{
+  position: relative;
+  width: 100%;
+}
+.btn-offert{
+  padding: 8px 25px 6px;
+  background: #673AB7;  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #512DA8, #673AB7);  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #512DA8, #673AB7); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  color: #fff;
+  border-radius: 20px;
+  max-width: 145px;
+  font-weight: 700;
+  letter-spacing: 1px;
+  font-size: 18px;
+}
+.offert-item i{
+  display: block;
+  position: absolute;
+  font-size: 32px;
+  color: #D70000;
+  right: 0;
+  top: 3px;
+  cursor: pointer;
+}
+.card button{
+  padding: 10px 25px;
+  display: block;
+  border: none;
+  background: #1976D2;
+  position: absolute;
+  width: 100%;
+  bottom: 0;
+  left: 0;
+  font-size: 18px;
+  font-weight: 700;
+  letter-spacing: 1px;
+  border-top-right-radius: 0;
+  border-top-left-radius: 0;
+}

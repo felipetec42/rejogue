@@ -18,382 +18,14 @@
 
   <!-- Core Stylesheet -->
   <link href="style.css" rel="stylesheet">
-
+  <link href="css/menu.css" rel="stylesheet">
+  <link href="css/busca.css" rel="stylesheet">
+  <link href="css/modal-venda.css" rel="stylesheet">
   <!-- Responsive CSS -->
   <link href="css/responsive.css" rel="stylesheet">
 
 </head>
-<style>
-body{
-  background: #F4F9FC;
-}
-#main-search{
-  margin-top: 70px;
-  min-height: 150px;
-  padding-top: 50px;
-}
-#main-search form{
-  width: 50%;
-  display: block;
-  margin: 0 auto;
-}
-#main-search form input{
-  height: 50px;
-  border-top-left-radius: 30px;
-  border-bottom-left-radius: 30px;
-  padding: 5px 30px;
-}
-#main-search form button{
-  width: 70px;
-  border-top-right-radius: 30px;
-  border-bottom-right-radius: 30px;
-  color: #fff;
-  border: none;
-  font-size: 24px;
-  background: #005C97;  /* fallback for old browsers */
-  background: -webkit-linear-gradient(to right, #363795, #005C97);  /* Chrome 10-25, Safari 5.1-6 */
-  background: linear-gradient(to right, #363795, #005C97); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-}
-.top-section{
-  background: #F4F9FC;
-  min-height: 350px;
-  padding-top: 25px;
-  padding-bottom: 50px;
-}
-.top-section h2{
-  margin-bottom: 20px;
-  color: #37474F;
-  text-transform: uppercase;
-  letter-spacing: .8px;
-  border-bottom: 1px solid #ccc;
-  font-size: 22px;
-}
-.card{
-  border-radius: 5px;
-  position: relative;
-  min-height: 370px;
-  margin-bottom: 20px;
-}
-.card-body{
-  padding: 10px 15px;
-}
-.card-img-top{
-  padding: 10px 10px;
-  min-height: 160px;
-  text-align: center;
-  border-bottom: 1px solid #ccc
-}
-.card-img-top img{
-  max-width: 170px;
-  max-height: 170px;
-}
-.name-item{
-  font-size: 15px;
-  color: #4527A0;
-  font-weight: bold;
-}
-.platform-item{
-  font-size: 13px;
-  color: #757575
-}
-.demand-item,
-.offert-item{
-  float: left;
-  margin-top: 15px;
-}
-.offert-item{
-  position: relative;
-  width: 100%;
-}
-.btn-offert{
-  padding: 8px 25px 6px;
-  background: #673AB7;  /* fallback for old browsers */
-  background: -webkit-linear-gradient(to right, #512DA8, #673AB7);  /* Chrome 10-25, Safari 5.1-6 */
-  background: linear-gradient(to right, #512DA8, #673AB7); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-  color: #fff;
-  border-radius: 20px;
-  max-width: 145px;
-  font-weight: 700;
-  letter-spacing: 1px;
-  font-size: 18px;
-}
-.offert-item i{
-  display: block;
-  position: absolute;
-  font-size: 32px;
-  color: #D70000;
-  right: 0;
-  top: 3px;
-  cursor: pointer;
-}
-.card button{
-  padding: 10px 25px;
-  display: block;
-  border: none;
-  background: #1976D2;
-  position: absolute;
-  width: 100%;
-  bottom: 0;
-  left: 0;
-  font-size: 18px;
-  font-weight: 700;
-  letter-spacing: 1px;
-  border-top-right-radius: 0;
-  border-top-left-radius: 0;
-}
-.header_area.sticky{
-  height: 75px;
-}
-#nav .nav-item{
-  text-align: center;
-  height: 72px;
-  letter-spacing: .6px;
-}
-#nav .nav-item i{
-  font-size: 24px;
-  color: #fff;
-  padding-top: 10px;
-}
-#nav .nav-item.active{
-  border-bottom: 3px solid #FFB300;
-}
-.header_area.sticky .menu_area #nav .nav-link{
-  padding: 2px 15px;
-  text-transform: uppercase;
-}
-.btn-vender{
-  background: #FF512F;  /* fallback for old browsers */
-  background: -webkit-linear-gradient(to right, #F09819, #FF512F);  /* Chrome 10-25, Safari 5.1-6 */
-  background: linear-gradient(to right, #F09819, #FF512F);
-  color: #fff;
-  display: inline-block;
-  font-weight: bold;
-  letter-spacing: .7px;
-  border: none;
-  min-width: 167px;
-  text-align: center;
-  border-radius: 24px 24px 24px 0px;
-  margin-left: 10px;
-  cursor: pointer;
-  font-size: 16px;
-  text-transform: uppercase;
-  padding: 10px 15px;
-  margin-top: -10px;
-}
-.header_area.sticky{
-  padding-right: 0;
-}
-.btn-profile{
-  color: #fff;
-  letter-spacing: .9px;
-  font-weight: bold;
-  height: 75px;
-  padding-top: 10px;
-  margin-top: -8px;
-  min-width: 65%;
-  float: right;
-  text-align: left;
-  cursor: pointer;
-  padding-left: 20px;
-  background: #36D1DC;  /* fallback for old browsers */
-  background: -webkit-linear-gradient(to right, #5B86E5, #36D1DC);  /* Chrome 10-25, Safari 5.1-6 */
-  background: linear-gradient(to right, #5B86E5, #36D1DC); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 
-}
-.btn-profile img{
-  border-radius: 100%;
-  border: 2px solid #f7f7f7;
-  max-width: 55px;
-  max-height: 55px;
-  margin-right: 10px;
-}
-.btn-profile i{
-  padding-left: 5px;
-  padding-right: 15px;
-}
-
-#modal-venda .modal-dialog{
-  max-width: 660px;
-}
-#modal-venda .modal-content{
-  background: #005C97;  /* fallback for old browsers */
-background: -webkit-linear-gradient(to bottom, #363795, #005C97);  /* Chrome 10-25, Safari 5.1-6 */
-background: linear-gradient(to bottom, #363795, #005C97); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-min-height: 500px;
-
-}
-#modal-venda .modal-content h3{
-  text-align: center;
-  color: #fff;
-  text-transform: uppercase;
-  letter-spacing: .9px;
-  padding-top: 10px;
-  font-size: 22px;
-}
-#modal-venda .modal-content p{
-  text-align: center;
-  color: #fff;
-  opacity: .9;
-  letter-spacing: .9px;
-  font-size: 16px;
-  padding-top: 10px;
-}
-.btn-tipo-venda{
-  cursor: pointer;
-  background-color: #f7f7f7;
-  padding: 20px;
-  border-radius: 8px;
-  box-shadow: 2px 0 4px;
-  margin-top: 30px;
-  -webkit-box-shadow: 0px 5px 8px 0px rgba(0,0,0,0.75);
-  -moz-box-shadow: 0px 5px 8px 0px rgba(0,0,0,0.75);
-  box-shadow: 0px 5px 8px 0px rgba(0,0,0,0.75);
-}
-.btn-tipo-venda img{
-  margin-bottom: 20px;
-}
-.modal-venda-footer{
-  border-top: 1px solid #f2f2f2;
-  padding-top: 25px;
-  padding-bottom: 10px;
-  margin-top: 20px;
-}
-.modal-venda-footer .btn-footer{
-  cursor: pointer;
-  background-color: #fff;
-  padding: 5px 25px;
-  border-radius: 20px;
-  text-align: center;
-  color: #005C97;
-  display: inline-block;
-  -webkit-box-shadow: 0px 5px 8px 0px rgba(0,0,0,0.75);
-  -moz-box-shadow: 0px 5px 8px 0px rgba(0,0,0,0.75);
-  box-shadow: 0px 5px 8px 0px rgba(0,0,0,0.75);
-}
-
-.bg-produto{
-  background-color: #f7f7f7;
-  padding: 10px;
-  border-radius: 8px;
-  box-shadow: 2px 0 4px;
-  -webkit-box-shadow: 0px 5px 8px 0px rgba(0,0,0,0.75);
-  -moz-box-shadow: 0px 5px 8px 0px rgba(0,0,0,0.75);
-  box-shadow: 0px 5px 8px 0px rgba(0,0,0,0.75);
-}
-
-#venda-2 .form-group{
-  margin-bottom: 40px;
-}
-#venda-2 input{
-  height: 50px;
-}
-#venda-2 small.text-muted{
-  color: #f7f7f7 !important;
-}
-#venda-2 small.text-muted a{
-  color: #f7f7f7 !important;
-  text-decoration: underline;
-  font-weight: bold;
-  letter-spacing: .9px;
-}
-#venda-2 .produto-desc{
-  color: #fff;
-  letter-spacing: .7px;
-}
-#venda-3 label{
-  color: #fff;
-  letter-spacing: .7px;
-}
-.form-check-input, .form-check-label{
-  margin-top: 12px;
-}
-.form-check-label{
-  margin-top: 10px;
-}
-#venda-3 .btn-sem-acessorios{
-  cursor: pointer;
-  background-color: #78909C;
-  padding: 5px 15px;
-  border-radius: 10px;
-  text-align: center;
-  color: #fff;
-  display: inline-block;
-  margin-bottom: 20px;
-}
-#venda-3 .btn-completo{
-  cursor: pointer;
-  background-color: #43A047;
-  padding: 5px 15px;
-  border-radius: 10px;
-  text-align: center;
-  color: #fff;
-  display: inline-block;
-  margin-bottom: 20px;
-}
-.input-joysticks{
-  margin-top: 15px;
-}
-.input-joysticks input{
-  width: 50px;
-  height: 35px;
-  margin-top: 2px;
-  margin-left: -20px;
-}
-
-#venda-4 form{
-  margin-top: 50px;
-}
-
-#venda-5 .bg-price{
-  background-color: #f7f7f7;
-  padding: 10px;
-  padding-top: 20px;
-  border-radius: 8px;
-  box-shadow: 2px 0 4px;
-  -webkit-box-shadow: 0px 5px 8px 0px rgba(0,0,0,0.75);
-  -moz-box-shadow: 0px 5px 8px 0px rgba(0,0,0,0.75);
-  box-shadow: 0px 5px 8px 0px rgba(0,0,0,0.75);
-  color: #757575;
-}
-#venda-5 small.text-muted{
-  color: #f7f7f7 !important;
-  letter-spacing: .9px;
-  margin-top: 15px;
-}
-.price{
-  font-weight: bold;
-  letter-spacing: 1px;
-  color: #4CAF50;
-  font-size: 20px;
-  padding-top: 10px;
-  display: inline-block;
-}
-.btn-ofertas{
-  padding: 10px;
-  color: #43A047;
-  background-color: #E0E0E0;
-  cursor: pointer;
-  margin: 0 auto;
-  margin-top: 15px;
-  margin-bottom: 10px;
-  width: 80%;
-  display: block;
-}
-.anuncio-text{
-  margin-top: 30px;
-  color: #fff;
-}
-#venda-5 textarea{
-  margin-bottom: 25px;
-}
-#venda-5 .input-final-price{
-  width: 120px;
-  height: 40px;
-  margin-top: 0px;
-  margin-left: -20px;
-  margin-bottom: 20px;
-}
-</style>
 <body>
   <div class="modal fade" id="modal-venda" tabindex="-1">
     <div class="modal-dialog">
@@ -641,62 +273,52 @@ min-height: 500px;
     </div>
   </div>
   <!-- ***** Header Area Start ***** -->
-  <header class="header_area sticky animated">
+  <header class="header_area sticky">
     <div class="container-fluid">
-      <div class="row align-items-center">
+      <div class="row">
         <!-- Menu Area Start -->
         <div class="col-12 col-lg-9">
           <div class="menu_area">
-            <nav class="navbar navbar-expand-lg navbar-light" style="position: relative;">
-              <!-- Logo -->
-              <a class="navbar-brand" href="#">
-                <img src="img/core-img/logo.png" alt="" class="img-fluid">
-              </a>
-              <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#ca-navbar" aria-controls="ca-navbar" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+            <!-- Logo -->
+            <a class="navbar-brand" href="#">
+              <img src="img/core-img/logo.png" alt="" class="img-fluid">
+            </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#ca-navbar" aria-controls="ca-navbar" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
 
-              <div style="display: block; float: right; position: absolute; right: 0; top: 25px;">
-                <button data-toggle="modal" data-target="#modal-venda" class="btn-vender">Quero Vender</button>
-              </div>
-              <!-- Menu Area -->
-              <div class="collapse navbar-collapse" id="ca-navbar">
-                <ul class="navbar-nav ml-auto" id="nav" style="display: none;">
-                  <li class="nav-item active">
-                    <i class="fa fa-search"></i>
-                    <a class="nav-link" href="busca.html">Buscar</a>
-                  </li>
-                  <li class="nav-item">
-                    <i class="fa fa-comments"></i>
-                    <a class="nav-link" href="mensagens.hmtl">Mensagens</a>
-                  </li>
-                  <li class="nav-item">
-                    <i class="fa fa-star"></i>
-                    <a class="nav-link" href="mensagens.hmtl">Meus Anúncios</a>
-                  </li>
-                  <li class="nav-item">
-                    <i class="fa fa-heart"></i>
-                    <a class="nav-link" href="favoritos.html">Favoritos</a>
-                  </li>
-                  <li class="nav-item">
-                    <i class="fa fa-user-circle" aria-hidden="true"></i>
-                    <a class="nav-link" href="perfil.html">Meu Perfil</a>
-                  </li>
-                  <li class="nav-item">
-                    <i class="fa fa-power-off" aria-hidden="true"></i>
-                    <a class="nav-link" href="index.html">Sair</a>
-                  </li>
-                </ul>
-                <div class="btn-vender d-lg-none">
-                  <a href="#" data-toggle="modal" data-target="#modal-login">Quero Vender</a>
-                </div>
-              </div>
+            <div class="cta-venda">
+              <button data-toggle="modal" data-target="#modal-venda" class="btn-vender">Quero Vender</button>
+            </div>
+            
+            <nav class="navbar navbar-expand-lg">
+              <a class="nav-link" href="messages.html">
+                <i class="fa fa-comments"></i>
+              </a>
+              <a class="nav-link" href="favoritos.html">
+                <i class="fa fa-heart"></i>
+              </a>
+              <a class="nav-link" href="anuncios.html">
+                <i class="fa fa-star"></i>
+              </a>
+              <a class="nav-link" href="perfil.html">
+                <i class="fa fa-user-circle"></i>
+              </a>
             </nav>
+
           </div>
         </div>
         <div class="col-lg-3 text-right p-0">
-          <div class="btn-profile">
-            <img src="img/default/profile.jpg">
-            <span>Felipe</span>
-            <i class="fa fa-chevron-down" aria-hidden="true"></i>
+          <div class="dropdown">
+            <div class="btn-profile dropdown-toggle" id="dropdownMenuButton" data-toggle="dropdown">
+              <img src="img/default/profile.jpg">
+              <span>Felipe</span>
+              <i class="fa fa-chevron-down" aria-hidden="true"></i>
+              <ul class="dropdown-menu">
+                <li class="dropdown-item">
+                  <i class="fa fa-power-off" aria-hidden="true"></i>
+                  <a class="nav-link" href="index.html">Sair</a>
+                </li>
+              </ul>
+            </div>
           </div>
         </div>
       </div>
@@ -705,7 +327,7 @@ min-height: 500px;
   <!-- ***** Header Area End ***** -->
 
   <!-- ***** Search Input ***** -->
-  <section class="clearfix" id="main-search" style="background-color: #fff;">
+  <section class="clearfix" id="main-search">
     <div class="container">
       <div class="row">
         <div class="col-lg-12">

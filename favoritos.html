@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="description" content="">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <!-- Title -->
+  <title>Rejogue - Vida infinita para os jogos</title>
+
+  <!-- Favicon -->
+  <link rel="icon" href="img/core-img/favicon.ico">
+  
+  <!-- Bootstrap 4.0.0 -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+  <!-- Core Stylesheet -->
+  <link href="style.css" rel="stylesheet">
+  <link href="css/menu.css" rel="stylesheet">
+  <link href="css/favoritos.css" rel="stylesheet">
+  <link href="css/modal-venda.css" rel="stylesheet">
+  <!-- Responsive CSS -->
+  <link href="css/responsive.css" rel="stylesheet">
+
+</head>
+
+<body>
+  <!-- ***** Header Area Start ***** -->
+  <header class="header_area sticky">
+    <div class="container-fluid">
+      <div class="row">
+        <!-- Menu Area Start -->
+        <div class="col-12 col-lg-9">
+          <div class="menu_area">
+            <!-- Logo -->
+            <a class="navbar-brand" href="#">
+              <img src="img/core-img/logo.png" alt="" class="img-fluid">
+            </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#ca-navbar" aria-controls="ca-navbar" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+
+            <div class="cta-venda">
+              <button data-toggle="modal" data-target="#modal-venda" class="btn-vender">Quero Vender</button>
+            </div>
+            
+            <nav class="navbar navbar-expand-lg">
+              <a class="nav-link" href="messages.html">
+                <i class="fa fa-comments"></i>
+              </a>
+              <a class="nav-link" href="favoritos.html">
+                <i class="fa fa-heart"></i>
+              </a>
+              <a class="nav-link" href="anuncios.html">
+                <i class="fa fa-star"></i>
+              </a>
+              <a class="nav-link" href="perfil.html">
+                <i class="fa fa-user-circle"></i>
+              </a>
+            </nav>
+
+          </div>
+        </div>
+        <div class="col-lg-3 text-right p-0">
+          <div class="dropdown">
+            <div class="btn-profile dropdown-toggle" id="dropdownMenuButton" data-toggle="dropdown">
+              <img src="img/default/profile.jpg">
+              <span>Felipe</span>
+              <i class="fa fa-chevron-down" aria-hidden="true"></i>
+              <ul class="dropdown-menu">
+                <li class="dropdown-item">
+                  <i class="fa fa-power-off" aria-hidden="true"></i>
+                  <a class="nav-link" href="index.html">Sair</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+  <!-- ***** Header Area End ***** -->
+
+  <!-- ***** Search Input ***** -->
+  <section class="clearfix" id="main-search">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-12">
+          <form action="#">
+            <div class="input-group mb-3">
+              <input type="text" class="form-control" placeholder="Buscar...">
+              <div class="input-group-append">
+                <button class="btn btn-outline-secondary" type="button">
+                  <i class="fa fa-search"></i>
+                </button>
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- ***** Search Input End ***** -->
+
+  <!-- ***** Filters ***** -->
+
+  <!-- ***** Filters End ***** -->
+
+  <!-- Top Recents -->
+  <section id="top-recents" class="top-section">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-12">
+          <h2>Favoritos</h2>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-3">
+          <div class="card">
+            <div class="card-img-top">
+              <img src="img/default/test-mario.png" alt="">
+            </div>
+            <div class="card-body">
+              <div class="card-text">
+                <div class="name-item">
+                 Super Mario Odyssey 
+                </div>
+                <div class="platform-item">
+                 Nintendo Switch
+                </div>
+                <div class="offert-item text-center">
+                  <div class="btn-offert">R$ 160,00</div>
+                </div>
+                <div class="name">Diego Santana</div>
+                <div class="local">Ribeirão Pires - SP</div>
+                <div class="btn-phone text-left">(11) 91234-5678</div>
+                <hr>
+                <div class="row action">
+                  <div class="col-md-6 text-center">
+                    <button class="btn btn-message"><i class="fa fa-comment"></i></button> 
+                  </div>
+                  <div class="col-md-6 text-center">
+                    <button class="btn btn-fotos"><i class="fa fa-camera"></i></button>
+                  </div>
+                </div>
+                <button class="btn btn-primary btn-remove"> Remover <i class="fa fa-trash-o"></i></button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-3">
+          <div class="card">
+            <div class="card-img-top">
+              <img src="img/default/teste-pokemon.png" alt="">
+            </div>
+            <div class="card-body">
+              <div class="card-text">
+                <div class="name-item">
+                 Pokémon Moon
+                </div>
+                <div class="platform-item">
+                 Nintendo 3DS
+                </div>
+                <div class="offert-item text-center">
+                  <div class="btn-offert">R$ 160,00</div>
+                </div>
+                <div class="name">Diego Santana</div>
+                <div class="local">Ribeirão Pires - SP</div>
+                <div class="btn-phone text-left">(11) 91234-5678</div>
+                <hr>
+                <div class="row action">
+                  <div class="col-md-6 text-center">
+                    <button class="btn btn-message"><i class="fa fa-comment"></i></button> 
+                  </div>
+                  <div class="col-md-6 text-center">
+                    <button class="btn btn-fotos"><i class="fa fa-camera"></i></button>
+                  </div>
+                </div>
+                <button class="btn btn-primary btn-remove"> Remover <i class="fa fa-trash-o"></i></button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-3">
+          <div class="card">
+            <div class="card-img-top">
+              <img src="img/default/teste-witcher.png" alt="">
+            </div>
+            <div class="card-body">
+              <div class="card-text">
+                <div class="name-item">
+                 The Witcher 3 - Wild Hunt
+                </div>
+                <div class="platform-item">
+                 Playstation 3
+                </div>
+                <div class="offert-item text-center">
+                  <div class="btn-offert">R$ 160,00</div>
+                </div>
+                <div class="name">Diego Santana</div>
+                <div class="local">Ribeirão Pires - SP</div>
+                <div class="btn-phone text-left">(11) 91234-5678</div>
+                <hr>
+                <div class="row action">
+                  <div class="col-md-6 text-center">
+                    <button class="btn btn-message"><i class="fa fa-comment"></i></button> 
+                  </div>
+                  <div class="col-md-6 text-center">
+                    <button class="btn btn-fotos"><i class="fa fa-camera"></i></button>
+                  </div>
+                </div>
+                <button class="btn btn-primary btn-remove"> Remover <i class="fa fa-trash-o"></i></button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+  
+  <!-- ***** Footer Area Start ***** -->
+  <footer class="footer-social-icon text-center section_padding_70 clearfix">
+    <!-- footer logo -->
+    <div class="footer-text">
+      <img src="img/core-img/logo-lg.png" alt="">
+    </div>
+    <!-- social icon-->
+    <div class="footer-social-icon">
+      <a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+      <a href="#"> <i class="fa fa-instagram" aria-hidden="true"></i></a>
+    </div>
+    <!-- Foooter Text-->
+    <div class="copyright-text">
+      <!-- ***** Removing this text is now allowed! This template is licensed under CC BY 3.0 ***** -->
+      <p>Copyright ©2018 Rejogue. Desenvolvido por <a href="http://tec42.com.br" target="_blank">TEC42</a></p>
+    </div>
+  </footer>
+  <!-- ***** Footer Area Start ***** -->
+
+  <!-- Jquery-2.2.4 JS -->
+  <script src="js/jquery-2.2.4.min.js"></script>
+  <!-- Popper js -->
+  <script src="js/popper.min.js"></script>
+  <!-- Bootstrap-4 Beta JS -->
+  <script src="js/bootstrap.min.js"></script>
+  <!-- All Plugins JS -->
+  <script src="js/plugins.js"></script>
+  <!-- Footer Reveal JS -->
+  <script src="js/footer-reveal.min.js"></script>
+  <!-- Active JS -->
+  <script src="js/active.js"></script>
+
+  <script>
+    $('#btn-venda-1').click(function(){
+      $('#venda-1').fadeOut();
+      $('#venda-2').delay(800).fadeIn();
+    })
+    $('#btn-venda-2').click(function(){
+      $('#venda-2').fadeOut();
+      $('#venda-3').delay(800).fadeIn();
+    })
+    $('#btn-venda-3').click(function(){
+      $('#venda-3').fadeOut();
+      $('#venda-4').delay(800).fadeIn();
+    })
+    $('#btn-venda-4').click(function(){
+      $('#venda-4').fadeOut();
+      $('#venda-5').delay(800).fadeIn();
+    })
+    $('#btn-venda-5').click(function(){
+      $('#venda-5').fadeOut();
+      $('#venda-6').delay(800).fadeIn();
+    })
+  </script>
+</body>
+
+</html>

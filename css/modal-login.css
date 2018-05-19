@@ -1,0 +1,89 @@
+#modal-login .modal-dialog{
+  max-width: 70%;
+}
+#modal-login .modal-content{
+  background-color: #4527A0;
+  color: #f7f7f7;
+}
+.modal-left{
+  padding: 20px 50px;
+}
+.modal-right{
+  padding: 20px 10px;
+  background: url(../img/default/bg-modal-login.jpg) no-repeat top center; 
+  background-size: 500px 600px;
+}
+.modal button.close{
+  color: #fff;
+  border: 2px solid #fff;
+  opacity: 1;
+  height: 35px;
+  width: 35px;
+  border-radius: 100%;
+  font-size: 20px;
+  font-weight: 100;
+}
+.btns-modal-login{
+  display: block;
+  margin: 0 auto;
+  margin-top: 10px;
+  width: 300px;
+}
+.btn-login,
+.btn-signup{
+  background-color: #607D8B;
+  color: rgba(255,255,255,0.5);
+  padding: 10px 30px 8px;
+  float: left;
+  cursor: pointer;
+}
+.btn-signup{
+  border-top-left-radius: 30px;
+  border-bottom-left-radius: 30px;
+}
+.btn-login{
+  border-top-right-radius: 30px;
+  border-bottom-right-radius: 30px;
+}
+.btn-signup.active{
+  -webkit-box-shadow: -22px 5px 74px -10px rgba(20,20,20,1);
+  -moz-box-shadow: -22px 5px 74px -10px rgba(20,20,20,1);
+  box-shadow: -22px 5px 74px -10px rgba(20,20,20,1);
+  color: rgba(255,255,255,1);
+  background-color: #4CAF50;
+}
+.btn-login.active{
+  -webkit-box-shadow: 16px 5px 74px -10px rgba(20,20,20,1);
+  -moz-box-shadow: 16px 5px 74px -10px rgba(20,20,20,1);
+  box-shadow: 16px 5px 74px -10px rgba(20,20,20,1);
+  color: rgba(255,255,255,1);
+  background-color: #4CAF50;
+}
+form{
+  margin-top: 50px;
+  clear: both;
+  min-height: 400px;
+}
+hr{
+  border-top: 1px solid #f2f2f2;
+  margin-top: 90px;
+}
+.modal form .btn{
+  background-color: #4CAF50;
+  border: #4CAF50;
+  display: block;
+  float: left;
+  margin-top: 20px;
+  border-radius: 30px;
+  padding: 10px 25px;
+  -webkit-box-shadow: 2px 4px 49px -4px rgba(0,0,0,0.75);
+  -moz-box-shadow: 2px 4px 49px -4px rgba(0,0,0,0.75);
+  box-shadow: 2px 4px 49px -4px rgba(0,0,0,0.75);
+}
+.txt-login-link{
+  float: left;
+  border-bottom: 2px dashed #4CAF50;
+  opacity: .8;
+  margin-top: 30px;
+  margin-left: 30px;
+}
