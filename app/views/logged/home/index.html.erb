@@ -1,0 +1,700 @@
+<div class="modal fade" id="modal-venda" tabindex="-1">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-body">
+        <div class="container">
+
+          <div id="venda-1">
+            <div class="row">
+              <div class="col-lg-12">
+                <h3>Vamos lá!</h3>
+                <p>Primeiro informe o que vamos vender hoje.</p>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-lg-6 text-center">
+                <div class="btn-tipo-venda btn-console">
+                  <img src="/venda/btn-console.png">
+                  <span>Console</span>
+                </div>
+              </div>
+              <div class="col-lg-6 text-center">
+                <div class="btn-tipo-venda btn-game">
+                  <img src="/venda/btn-game.png">
+                  <span>Jogo</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="row modal-venda-footer">
+              <div class="col-lg-6">
+                <div class="btn-footer" data-dismiss="modal">
+                  Cancelar
+                </div>
+              </div>
+              <div class="col-lg-6 text-right">
+                <div class="btn-footer" id="btn-venda-1">
+                  Próximo <i class="fa fa-arrow-right"></i>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div id="venda-2" style="display: none;">
+            <div class="row">
+              <div class="col-lg-12">
+                <h3>Escolhendo o produto</h3>
+                <p>Ok. Agora digite o nome do console e selecione.</p>
+                <div class="form-group">
+                  <input type="text" class="form-control" id="console-name" placeholder="Playstation 4">
+                  <small class="form-text text-muted">Caso não encontre <a href="#">clique aqui.</a></small>
+                </div>
+              </div>
+            </div>
+
+            <div class="row">
+              <div class="col-md-5">
+                <div class="bg-produto">
+                  <img src="/venda/console-ps4.png">
+                </div>
+              </div>
+              <div class="col-md-7 produto-desc">
+                <span>Console: Playstation 4</span> <br>
+                <span>Armazenamento: 1 TB</span> <br>
+                <span>Ano de Lançamento: 2013</span> <br>
+                <span>Fabricante: SONY</span>
+              </div>
+            </div>
+
+            <div class="row modal-venda-footer">
+              <div class="col-lg-6">
+                <div class="btn-footer">
+                  <i class="fa fa-arrow-left"></i> Voltar
+                </div>
+              </div>
+              <div class="col-lg-6 text-right">
+                <div class="btn-footer" id="btn-venda-2">
+                  Próximo <i class="fa fa-arrow-right"></i>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div id="venda-3" style="display: none;">
+            <div class="row">
+              <div class="col-lg-12">
+                <h3>Acompanhamentos</h3>
+                <p>Agora informe quais os acessórios que acompanham o console.</p>
+                <div class="row">
+                  <div class="col-md-6 text-center">
+                    <div class="btn-sem-acessorios">
+                      Sem nenhum acessório <i class="fa fa-times" aria-hidden="true"></i>
+                    </div>
+                  </div>
+                  <div class="col-md-6 text-center">
+                    <div class="btn-completo">
+                      Todos os acessórios <i class="fa fa-check"></i>
+                    </div>
+                  </div>
+                </div>
+                <form>
+                  <div class="form-check">
+                    <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                    <label class="form-check-label" for="exampleCheck1">Cabo HDMI</label>
+                  </div>
+                  <div class="form-check">
+                    <input type="checkbox" class="form-check-input" id="exampleCheck2">
+                    <label class="form-check-label" for="exampleCheck1">Fonte de energia</label>
+                  </div>
+                  <div class="form-check">
+                    <input type="checkbox" class="form-check-input" id="exampleCheck3">
+                    <label class="form-check-label" for="exampleCheck1">Carregador USB p/ Joystick</label>
+                  </div>
+                  <div class="form-group row input-joysticks">
+                    <label for="inputEmail3" class="col-sm-5 col-form-label">Quantidade de controles</label>
+                    <div class="col-sm-2">
+                      <input type="text" class="form-control" id="inputEmail3">
+                    </div>
+                  </div>
+                  <div class="form-group">
+                    <label for="exampleInputEmail1">Outros acessórios:</label>
+                    <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                  </div>
+                </form>
+              </div>
+            </div>
+
+            <div class="row modal-venda-footer">
+              <div class="col-lg-6">
+                <div class="btn-footer">
+                  <i class="fa fa-arrow-left"></i> Voltar
+                </div>
+              </div>
+              <div class="col-lg-6 text-right">
+                <div class="btn-footer" id="btn-venda-3">
+                  Próximo <i class="fa fa-arrow-right"></i>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div id="venda-4" style="display: none;">
+            <div class="row">
+              <div class="col-lg-12">
+                <h3>Hora da foto</h3>
+                <p>Você pode mandar até 3 fotos, então capriche.</p>
+                <form>
+                  <div class="row">
+                    <div class="col-md-4 text-center">
+                      <img src="http://via.placeholder.com/150x150">
+                    </div>
+                    <div class="col-md-4 text-center" >
+                      <img src="http://via.placeholder.com/150x150">
+                    </div>
+                    <div class="col-md-4 text-center">
+                      <img src="http://via.placeholder.com/150x150">
+                    </div>
+                  </div>
+                </form>
+              </div>
+            </div>
+
+            <div class="row modal-venda-footer">
+              <div class="col-lg-6">
+                <div class="btn-footer">
+                  <i class="fa fa-arrow-left"></i> Voltar
+                </div>
+              </div>
+              <div class="col-lg-6 text-right">
+                <div class="btn-footer" id="btn-venda-4">
+                  Próximo <i class="fa fa-arrow-right"></i>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div id="venda-5" style="display: none;">
+            <div class="row">
+              <div class="col-lg-12">
+                <h3>Finalizando</h3>
+                <p>Escolha o valor da venda e digite o texto que irá aparecer no anúncio.</p>
+                <div class="row">
+                  <div class="col-md-6">
+                    <div class="bg-price text-center">
+                      Média do produto novo <br>
+                      <span class="price">R$ 799,99</span>
+                      <div class="btn-ofertas">
+                        Ver Ofertas
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-md-6">
+                    <div class="bg-price text-center">
+                      Média do produto usado <br>
+                      <span class="price">R$ 499,99</span>
+                      <div class="btn-ofertas">
+                        Ver Ofertas
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="row anuncio-text">
+                  <div class="col-md-10">
+                    <div class="form-group">
+                      <label for="exampleFormControlTextarea1">Texto do anúncio</label>
+                      <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                    </div>
+                  </div>
+                  <div class="col-md-12">
+                    <form>
+                      <div class="form-group row">
+                        <label for="inputEmail4" class="col-sm-4 col-form-label">Seu valor de venda</label>
+                        <div class="col-sm-4">
+                          <input type="text" class="form-control input-final-price" id="inputEmail4">
+                        </div>
+                        <div class="col-sm-12">
+                          <small id="emailHelp" class="form-text text-muted">
+                          *Os valores médios informados são apenas para referência, escolha o preço que achar justo para seu produto :)</small>
+                        </div>
+
+                      </div>
+                    </form>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="row modal-venda-footer">
+              <div class="col-lg-6">
+                <div class="btn-footer">
+                  <i class="fa fa-arrow-left"></i> Voltar
+                </div>
+              </div>
+              <div class="col-lg-6 text-right">
+                <div class="btn-footer">
+                  Próximo <i class="fa fa-arrow-right"></i>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- ***** Header Area Start ***** -->
+<header class="header_area sticky">
+  <div class="container-fluid">
+    <div class="row">
+      <!-- Menu Area Start -->
+      <div class="col-12 col-lg-9">
+        <div class="menu_area">
+          <!-- Logo -->
+          <a class="navbar-brand" href="#">
+            <img src="/core-img/logo.png" alt="" class="img-fluid">
+          </a>
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#ca-navbar" aria-controls="ca-navbar" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+
+          <div class="cta-venda">
+            <button data-toggle="modal" data-target="#modal-venda" class="btn-vender">Quero Vender</button>
+          </div>
+
+          <nav class="navbar navbar-expand-lg">
+            <a class="nav-link" href="messages.html">
+              <i class="fa fa-comments"></i>
+            </a>
+            <a class="nav-link" href="favoritos.html">
+              <i class="fa fa-heart"></i>
+            </a>
+            <a class="nav-link" href="anuncios.html">
+              <i class="fa fa-star"></i>
+            </a>
+            <a class="nav-link" href="perfil.html">
+              <i class="fa fa-user-circle"></i>
+            </a>
+          </nav>
+
+        </div>
+      </div>
+      <div class="col-lg-3 text-right p-0">
+        <div class="dropdown">
+          <div class="btn-profile dropdown-toggle" id="dropdownMenuButton" data-toggle="dropdown">
+            <img src="/default/profile.jpg">
+            <span>Felipe</span>
+            <i class="fa fa-chevron-down" aria-hidden="true"></i>
+            <ul class="dropdown-menu">
+              <li class="dropdown-item">
+                <%= link_to destroy_user_session_path, class: "nav-link", method: :delete do %>
+                  <i class="fa fa-power-off" aria-hidden="true"></i>
+                  Sair
+                <% end %>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</header>
+<!-- ***** Header Area End ***** -->
+
+<!-- ***** Search Input ***** -->
+<section class="clearfix" id="main-search">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-12">
+        <form action="#">
+          <div class="input-group mb-3">
+            <input type="text" class="form-control" placeholder="Buscar...">
+            <div class="input-group-append">
+              <button class="btn btn-outline-secondary" type="button">
+                <i class="fa fa-search"></i>
+              </button>
+            </div>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- ***** Search Input End ***** -->
+
+<!-- ***** Filters ***** -->
+
+<!-- ***** Filters End ***** -->
+
+<!-- Top Recents -->
+<section id="top-recents" class="top-section">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-12">
+        <h2>Adicionados recentemente</h2>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-md-3">
+        <div class="card">
+          <div class="card-img-top">
+            <img src="/default/test-mario.png" alt="">
+          </div>
+          <div class="card-body">
+            <div class="card-text">
+              <div class="name-item">
+               Super Mario Odyssey
+              </div>
+              <div class="platform-item">
+               Nintendo Switch
+              </div>
+
+              <div class="offert-item text-center">
+                <div class="btn-offert">R$ 160,00</div>
+                <i class="fa fa-heart-o" aria-hidden="true"></i>
+              </div>
+            </div>
+            <a href="produto-detalhe.html">
+              <button class="btn btn-primary"> + 15 Ofertas <i class="fa fa-arrow-right"></i></button>
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-3">
+        <div class="card">
+          <div class="card-img-top">
+            <img src="/default/teste-witcher.png" alt="">
+          </div>
+          <div class="card-body">
+            <div class="card-text">
+              <div class="name-item">
+               The Witcher 3 - Wild Hunt
+              </div>
+              <div class="platform-item">
+               Playstation 3
+              </div>
+
+              <div class="offert-item text-center">
+                <div class="btn-offert">R$ 59,00</div>
+                <i class="fa fa-heart-o" aria-hidden="true"></i>
+              </div>
+            </div>
+
+            <a href="produto-detalhe-2.html">
+              <button class="btn btn-primary"> + 15 Ofertas <i class="fa fa-arrow-right"></i></button>
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-3">
+        <div class="card" id="card-3">
+          <div class="card-img-top">
+            <img src="/default/teste-pokemon.png" alt="">
+          </div>
+          <div class="card-body">
+            <div class="card-text">
+              <div class="name-item">
+               Pokémon Moon
+              </div>
+              <div class="platform-item">
+               Nintendo 3DS
+              </div>
+              <div class="offert-item text-center">
+                <div class="btn-offert">R$ 89,00</div>
+                <i class="fa fa-heart-o" aria-hidden="true"></i>
+              </div>
+            </div>
+            <a href="produto-detalhe-4.html">
+              <button class="btn btn-primary"> + 110 Ofertas <i class="fa fa-arrow-right"></i></button>
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-3">
+        <div class="card" id="card-4">
+          <div class="card-img-top">
+            <img src="/default/teste-dbz.png" alt="">
+          </div>
+          <div class="card-body">
+            <div class="card-text">
+              <div class="name-item">
+               Dragon Ball Fighter Z
+              </div>
+              <div class="platform-item">
+               Xbox One
+              </div>
+              <div class="offert-item text-center">
+                <div class="btn-offert">R$ 140,00</div>
+                <i class="fa fa-heart-o" aria-hidden="true"></i>
+              </div>
+            </div>
+
+            <a href="produto-detalhe-3.html">
+              <button class="btn btn-primary"> + 15 Ofertas <i class="fa fa-arrow-right"></i></button>
+            </a>
+          </div>
+        </div>
+      </div>
+
+
+    </div>
+  </div>
+</section>
+
+<!-- Top Offered -->
+<section id="top-offered" class="top-section">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-12">
+        <h2>Mais ofertados</h2>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-md-3">
+        <div class="card">
+          <div class="card-img-top">
+            <img src="/default/test-mario.png" alt="">
+          </div>
+          <div class="card-body">
+            <div class="card-text">
+              <div class="name-item">
+               Super Mario Odyssey
+              </div>
+              <div class="platform-item">
+               Nintendo Switch
+              </div>
+
+              <div class="offert-item text-center">
+                <div class="btn-offert">R$ 160,00</div>
+                <i class="fa fa-heart-o" aria-hidden="true"></i>
+              </div>
+            </div>
+            <a href="produto-detalhe.html">
+              <button class="btn btn-primary"> + 15 Ofertas <i class="fa fa-arrow-right"></i></button>
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-3">
+        <div class="card">
+          <div class="card-img-top">
+            <img src="/default/teste-witcher.png" alt="">
+          </div>
+          <div class="card-body">
+            <div class="card-text">
+              <div class="name-item">
+               The Witcher 3 - Wild Hunt
+              </div>
+              <div class="platform-item">
+               Playstation 3
+              </div>
+
+              <div class="offert-item text-center">
+                <div class="btn-offert">R$ 59,00</div>
+                <i class="fa fa-heart-o" aria-hidden="true"></i>
+              </div>
+            </div>
+
+            <a href="produto-detalhe-2.html">
+              <button class="btn btn-primary"> + 15 Ofertas <i class="fa fa-arrow-right"></i></button>
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-3">
+        <div class="card" id="card-3">
+          <div class="card-img-top">
+            <img src="/default/teste-pokemon.png" alt="">
+          </div>
+          <div class="card-body">
+            <div class="card-text">
+              <div class="name-item">
+               Pokémon Moon
+              </div>
+              <div class="platform-item">
+               Nintendo 3DS
+              </div>
+              <div class="offert-item text-center">
+                <div class="btn-offert">R$ 89,00</div>
+                <i class="fa fa-heart-o" aria-hidden="true"></i>
+              </div>
+            </div>
+            <a href="produto-detalhe-4.html">
+              <button class="btn btn-primary"> + 110 Ofertas <i class="fa fa-arrow-right"></i></button>
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-3">
+        <div class="card" id="card-4">
+          <div class="card-img-top">
+            <img src="/default/teste-dbz.png" alt="">
+          </div>
+          <div class="card-body">
+            <div class="card-text">
+              <div class="name-item">
+               Dragon Ball Fighter Z
+              </div>
+              <div class="platform-item">
+               Xbox One
+              </div>
+              <div class="offert-item text-center">
+                <div class="btn-offert">R$ 140,00</div>
+                <i class="fa fa-heart-o" aria-hidden="true"></i>
+              </div>
+            </div>
+
+            <a href="produto-detalhe-3.html">
+              <button class="btn btn-primary"> + 15 Ofertas <i class="fa fa-arrow-right"></i></button>
+            </a>
+          </div>
+        </div>
+      </div>
+
+
+    </div>
+  </div>
+</section>
+
+<!-- Top Wanted -->
+<section id="top-wanted" class="top-section">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-12">
+        <h2>Mais procurados</h2>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-md-3">
+        <div class="card">
+          <div class="card-img-top">
+            <img src="/default/test-mario.png" alt="">
+          </div>
+          <div class="card-body">
+            <div class="card-text">
+              <div class="name-item">
+               Super Mario Odyssey
+              </div>
+              <div class="platform-item">
+               Nintendo Switch
+              </div>
+
+              <div class="offert-item text-center">
+                <div class="btn-offert">R$ 160,00</div>
+                <i class="fa fa-heart-o" aria-hidden="true"></i>
+              </div>
+            </div>
+            <a href="produto-detalhe.html">
+              <button class="btn btn-primary"> + 15 Ofertas <i class="fa fa-arrow-right"></i></button>
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-3">
+        <div class="card">
+          <div class="card-img-top">
+            <img src="/default/teste-witcher.png" alt="">
+          </div>
+          <div class="card-body">
+            <div class="card-text">
+              <div class="name-item">
+               The Witcher 3 - Wild Hunt
+              </div>
+              <div class="platform-item">
+               Playstation 3
+              </div>
+
+              <div class="offert-item text-center">
+                <div class="btn-offert">R$ 59,00</div>
+                <i class="fa fa-heart-o" aria-hidden="true"></i>
+              </div>
+            </div>
+
+            <a href="produto-detalhe-2.html">
+              <button class="btn btn-primary"> + 15 Ofertas <i class="fa fa-arrow-right"></i></button>
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-3">
+        <div class="card" id="card-3">
+          <div class="card-img-top">
+            <img src="/default/teste-pokemon.png" alt="">
+          </div>
+          <div class="card-body">
+            <div class="card-text">
+              <div class="name-item">
+               Pokémon Moon
+              </div>
+              <div class="platform-item">
+               Nintendo 3DS
+              </div>
+              <div class="offert-item text-center">
+                <div class="btn-offert">R$ 89,00</div>
+                <i class="fa fa-heart-o" aria-hidden="true"></i>
+              </div>
+            </div>
+            <a href="produto-detalhe-4.html">
+              <button class="btn btn-primary"> + 110 Ofertas <i class="fa fa-arrow-right"></i></button>
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-3">
+        <div class="card" id="card-4">
+          <div class="card-img-top">
+            <img src="/default/teste-dbz.png" alt="">
+          </div>
+          <div class="card-body">
+            <div class="card-text">
+              <div class="name-item">
+               Dragon Ball Fighter Z
+              </div>
+              <div class="platform-item">
+               Xbox One
+              </div>
+              <div class="offert-item text-center">
+                <div class="btn-offert">R$ 140,00</div>
+                <i class="fa fa-heart-o" aria-hidden="true"></i>
+              </div>
+            </div>
+
+            <a href="produto-detalhe-3.html">
+              <button class="btn btn-primary"> + 15 Ofertas <i class="fa fa-arrow-right"></i></button>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<script>
+  $('#btn-venda-1').click(function(){
+    $('#venda-1').fadeOut();
+    $('#venda-2').delay(800).fadeIn();
+  })
+  $('#btn-venda-2').click(function(){
+    $('#venda-2').fadeOut();
+    $('#venda-3').delay(800).fadeIn();
+  })
+  $('#btn-venda-3').click(function(){
+    $('#venda-3').fadeOut();
+    $('#venda-4').delay(800).fadeIn();
+  })
+  $('#btn-venda-4').click(function(){
+    $('#venda-4').fadeOut();
+    $('#venda-5').delay(800).fadeIn();
+  })
+  $('#btn-venda-5').click(function(){
+    $('#venda-5').fadeOut();
+    $('#venda-6').delay(800).fadeIn();
+  })
+</script>

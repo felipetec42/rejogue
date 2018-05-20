@@ -1,0 +1,137 @@
+body{
+  background: #F4F9FC;
+}
+#main-search{
+  margin-top: 70px;
+  min-height: 150px;
+  padding-top: 50px;
+}
+#main-search form{
+  width: 50%;
+  display: block;
+  margin: 0 auto;
+}
+#main-search form input{
+  height: 50px;
+  border-top-left-radius: 30px;
+  border-bottom-left-radius: 30px;
+  padding: 5px 30px;
+}
+#main-search form button{
+  width: 70px;
+  border-top-right-radius: 30px;
+  border-bottom-right-radius: 30px;
+  color: #fff;
+  border: none;
+  font-size: 24px;
+  background: #005C97;  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #363795, #005C97);  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #363795, #005C97); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+.perfil-card{
+  width: 100%;
+  margin-bottom: 50px;
+  border-radius: 10px;
+  padding-bottom: 20px;
+}
+.perfil-foto{
+  margin: 20px 0;
+}
+.perfil-foto img{
+  border-radius: 50%;
+  width: 200px;
+  display: block;
+  margin: 0 auto;
+  z-index: 0;
+}
+.btn-altera-foto{
+  cursor: pointer;
+  position: relative;
+  display: block;
+  margin: 0 auto;
+  margin-top: -20px;
+  padding: 12px 10px 5px;
+  border-radius: 50%;
+  width: 50px;
+  height: 45px;
+  text-align: center;
+  z-index: 1;
+  background: #56CCF2;
+  background: -webkit-linear-gradient(left, #2F80ED, #56CCF2);
+  background: -o-linear-gradient(left, #2F80ED, #56CCF2);
+  background: linear-gradient(to right, #2F80ED, #56CCF2);
+}
+.btn-altera-foto i{
+  color: #fff;
+  font-size: 18px;
+}
+.btn-remove-foto{
+  display: block;
+  margin: 20px auto 10px;
+  background-color: #FF5252;
+  color: #fff;
+  padding: 7px 15px 4px;
+  width: 200px;
+  border-radius: 6px;
+  text-align: center;
+  cursor: pointer;
+}
+.btn-altera-senha{
+  display: block;
+  margin: 20px auto 10px;
+  background-color: #607D8B;
+  color: #fff;
+  padding: 7px 15px 4px;
+  width: 200px;
+  border-radius: 6px;
+  text-align: center;
+  cursor: pointer;
+}
+.perfil-info{
+  padding-top: 50px;
+}
+.perfil-nome,.perfil-local, .perfil-email, .perfil-phone{
+  font-size: 20px;
+  letter-spacing: 1px;
+  color: #607D8B;
+  margin-bottom: 15px;
+  padding-bottom: 15px;
+  border-bottom: 1px dotted #B0BEC5;
+}
+.nome,.local,.email,.phone{
+  padding-top: 10px;
+  float: left;
+  display: block;
+}
+.nome i,
+.local i,
+.email i,
+.phone i{
+  width: 30px;
+  color: #37474F;
+}
+.btn-edit{
+  float: left;
+  display: block;
+  cursor: pointer;
+  position: relative;
+  width: 110px;
+  margin-left: 20px;
+  text-align: center;
+  background: #1E88E5;
+  color: #fff;
+  font-size: 14px;
+  border-radius: 6px;
+  padding: 6px 5px 0px;
+  margin-top: 10px;
+  font-size: 14px;
+}
+.btn-edit i{
+  color: #fff;
+  font-size: 14px;
+}
+
+
+
+

@@ -1,0 +1,181 @@
+#modal-venda .modal-dialog{
+  max-width: 660px;
+}
+#modal-venda .modal-content{
+  background: #005C97;
+  background: -webkit-linear-gradient(#363795, #005C97);
+  background: -o-linear-gradient(#363795, #005C97);
+  background: linear-gradient(#363795, #005C97);
+  min-height: 500px;
+}
+#modal-venda .modal-content h3{
+  text-align: center;
+  color: #fff;
+  text-transform: uppercase;
+  letter-spacing: .9px;
+  padding-top: 10px;
+  font-size: 22px;
+}
+#modal-venda .modal-content p{
+  text-align: center;
+  color: #fff;
+  opacity: .9;
+  letter-spacing: .9px;
+  font-size: 16px;
+  padding-top: 10px;
+}
+.btn-tipo-venda{
+  cursor: pointer;
+  background-color: #f7f7f7;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 2px 0 4px;
+  margin-top: 30px;
+  -webkit-box-shadow: 0px 5px 8px 0px rgba(0,0,0,0.75);
+  -moz-box-shadow: 0px 5px 8px 0px rgba(0,0,0,0.75);
+  box-shadow: 0px 5px 8px 0px rgba(0,0,0,0.75);
+}
+.btn-tipo-venda img{
+  margin-bottom: 20px;
+}
+.modal-venda-footer{
+  border-top: 1px solid #f2f2f2;
+  padding-top: 25px;
+  padding-bottom: 10px;
+  margin-top: 20px;
+}
+.modal-venda-footer .btn-footer{
+  cursor: pointer;
+  background-color: #fff;
+  padding: 5px 25px;
+  border-radius: 20px;
+  text-align: center;
+  color: #005C97;
+  display: inline-block;
+  -webkit-box-shadow: 0px 5px 8px 0px rgba(0,0,0,0.75);
+  -moz-box-shadow: 0px 5px 8px 0px rgba(0,0,0,0.75);
+  box-shadow: 0px 5px 8px 0px rgba(0,0,0,0.75);
+}
+
+.bg-produto{
+  background-color: #f7f7f7;
+  padding: 10px;
+  border-radius: 8px;
+  box-shadow: 2px 0 4px;
+  -webkit-box-shadow: 0px 5px 8px 0px rgba(0,0,0,0.75);
+  -moz-box-shadow: 0px 5px 8px 0px rgba(0,0,0,0.75);
+  box-shadow: 0px 5px 8px 0px rgba(0,0,0,0.75);
+}
+
+#venda-2 .form-group{
+  margin-bottom: 40px;
+}
+#venda-2 input{
+  height: 50px;
+}
+#venda-2 small.text-muted{
+  color: #f7f7f7 !important;
+}
+#venda-2 small.text-muted a{
+  color: #f7f7f7 !important;
+  text-decoration: underline;
+  font-weight: bold;
+  letter-spacing: .9px;
+}
+#venda-2 .produto-desc{
+  color: #fff;
+  letter-spacing: .7px;
+}
+#venda-3 label{
+  color: #fff;
+  letter-spacing: .7px;
+}
+.form-check-input, .form-check-label{
+  margin-top: 12px;
+}
+.form-check-label{
+  margin-top: 10px;
+}
+#venda-3 .btn-sem-acessorios{
+  cursor: pointer;
+  background-color: #78909C;
+  padding: 5px 15px;
+  border-radius: 10px;
+  text-align: center;
+  color: #fff;
+  display: inline-block;
+  margin-bottom: 20px;
+}
+#venda-3 .btn-completo{
+  cursor: pointer;
+  background-color: #43A047;
+  padding: 5px 15px;
+  border-radius: 10px;
+  text-align: center;
+  color: #fff;
+  display: inline-block;
+  margin-bottom: 20px;
+}
+.input-joysticks{
+  margin-top: 15px;
+}
+.input-joysticks input{
+  width: 50px;
+  height: 35px;
+  margin-top: 2px;
+  margin-left: -20px;
+}
+
+#venda-4 form{
+  margin-top: 50px;
+}
+
+#venda-5 .bg-price{
+  background-color: #f7f7f7;
+  padding: 10px;
+  padding-top: 20px;
+  border-radius: 8px;
+  box-shadow: 2px 0 4px;
+  -webkit-box-shadow: 0px 5px 8px 0px rgba(0,0,0,0.75);
+  -moz-box-shadow: 0px 5px 8px 0px rgba(0,0,0,0.75);
+  box-shadow: 0px 5px 8px 0px rgba(0,0,0,0.75);
+  color: #757575;
+}
+#venda-5 small.text-muted{
+  color: #f7f7f7 !important;
+  letter-spacing: .9px;
+  margin-top: 15px;
+}
+.price{
+  font-weight: bold;
+  letter-spacing: 1px;
+  color: #4CAF50;
+  font-size: 20px;
+  padding-top: 10px;
+  display: inline-block;
+}
+.btn-ofertas{
+  padding: 10px;
+  color: #43A047;
+  background-color: #E0E0E0;
+  cursor: pointer;
+  margin: 0 auto;
+  margin-top: 15px;
+  margin-bottom: 10px;
+  width: 80%;
+  display: block;
+}
+.anuncio-text{
+  margin-top: 30px;
+  color: #fff;
+}
+#venda-5 textarea{
+  margin-bottom: 25px;
+}
+#venda-5 .input-final-price{
+  width: 120px;
+  height: 40px;
+  margin-top: 0px;
+  margin-left: -20px;
+  margin-bottom: 20px;
+}

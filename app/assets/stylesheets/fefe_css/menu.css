@@ -1,0 +1,110 @@
+.header_area.sticky{
+  height: 75px;
+  padding: 0 !important;
+}
+#nav .nav-item{
+  text-align: center;
+  height: 72px;
+  letter-spacing: .6px;
+}
+#nav .nav-item i{
+  font-size: 24px;
+  color: #fff;
+  padding-top: 10px;
+}
+#nav .nav-item.active{
+  border-bottom: 3px solid #FFB300;
+}
+.header_area.sticky .menu_area #nav .nav-link{
+  padding: 2px 15px;
+  text-transform: uppercase;
+}
+.navbar{
+  justify-content: flex-end;
+  margin-top: -20px;
+}
+.navbar-brand{
+  float: left;
+}
+.nav-link i{
+  color: #fff;
+  font-size: 24px;
+}
+.cta-venda{
+  display: none; 
+  float: right; 
+  position: absolute; 
+  right: 0; 
+  top: 25px;
+}
+.btn-vender{
+  background: #FF512F;  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #F09819, #FF512F);  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #F09819, #FF512F);
+  color: #fff;
+  display: inline-block;
+  font-weight: bold;
+  letter-spacing: .7px;
+  border: none;
+  min-width: 167px;
+  text-align: center;
+  border-radius: 24px 24px 24px 0px;
+  margin-left: 10px;
+  cursor: pointer;
+  font-size: 16px;
+  text-transform: uppercase;
+  padding: 10px 15px;
+  margin-top: -10px;
+}
+.header_area.sticky{
+  padding-right: 0;
+}
+.btn-profile{
+  color: #fff;
+  letter-spacing: .9px;
+  font-weight: bold;
+  height: 75px;
+  padding-top: 10px;
+  min-width: 70%;
+  float: right;
+  text-align: left;
+  cursor: pointer;
+  padding-left: 20px;
+  background: #0288D1;
+
+}
+.btn-profile img{
+  border-radius: 100%;
+  border: 2px solid #f7f7f7;
+  max-width: 55px;
+  max-height: 55px;
+  margin-right: 10px;
+}
+.btn-profile i{
+  padding-left: 5px;
+  padding-right: 15px;
+}
+.dropdown-toggle::after{
+  content: none;
+}
+.dropdown-item i{
+  float: left;
+  padding-top: 10px;
+  color: #fff;
+}
+.dropdown-menu{
+  margin: 0;
+  background: #56CCF2;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to bottom, #2F80ED, #56CCF2);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to bottom, #2F80ED, #56CCF2); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+  right: 0;
+  border-top-left-radius:0;
+  left: auto;
+}
+.dropdown-menu a{
+  color: #fff;
+}
+.dropdown-item:focus, .dropdown-item:hover{
+  background-color: transparent;
+}
