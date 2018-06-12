@@ -288,14 +288,7 @@ p {
 :: 2.0 Header Area CSS
 -------------------------- */
 
-.header_area {
-    left: 0;
-    position: absolute;
-    width: 100%;
-    z-index: 99;
-    top: 0;
-    padding: 0 4%;
-}
+
 #ca-navbar{
     margin-top: -5px;
 }
@@ -341,28 +334,33 @@ p {
 
 .sing-up-button {
     text-align: right;
-    margin-top: -12px;
+    padding: 10px 0;
+    margin-top: 10px;
 }
 
 .sing-up-button > a {
     color: #fff;
     font-weight: 500;
     display: inline-block;
-    border: 2px solid #a883e9;
-    height: 50px;
-    min-width: 178px;
-    line-height: 46px;
+    height: 40px;
+    min-width: 170px;
+    line-height: 0;
     text-align: center;
-    border-radius: 24px 24px 24px 0px;
+    border-radius: 24px;
+    padding-top: 12px;
+    letter-spacing: 1px;
+    background: #5E35B1;  /* fallback for old browsers */
 }
 
 .sing-up-button > a:hover {
-    background: #3949AB;
     color: #fff;
     border-color: transparent;
     -webkit-transition-duration: 500ms;
     -o-transition-duration: 500ms;
     transition-duration: 500ms;
+    -webkit-box-shadow: -1px 0px 50px 0px rgba(0,0,0,0.75);
+    -moz-box-shadow: -1px 0px 50px 0px rgba(0,0,0,0.75);
+    box-shadow: -1px 0px 50px 0px rgba(0,0,0,0.75);
 }
 
 /* stcicky css */
@@ -386,342 +384,6 @@ p {
 }
 .header_area.sticky .navbar {
     padding: 0;
-}
-
-
-/* --------------------------
-:: 3.0 Wellcome Area CSS
--------------------------- */
-
-.wellcome_area {
-    background-image: url(/bg-img/welcome-bg.jpg);
-    height: 900px;
-    position: relative;
-    z-index: 1;
-    background-position: bottom center;
-    background-size: cover;
-}
-
-.wellcome_area:after {
-    position: absolute;
-    width: 100%;
-    left: 0;
-    height: 2px;
-    background-color: #fff;
-    content: '';
-    bottom: 0;
-    z-index: 2;
-}
-
-.welcome-thumb {
-    width: 45%;
-    position: absolute;
-    bottom: -130px;
-    right: 85px;
-    z-index: 9;
-}
-
-.welcome-thumb img {
-    height: auto;
-    width: 100%;
-}
-
-.wellcome-heading > h2 {
-    font-size: 100px;
-    color: #fff;
-    font-weight: 700;
-    position: relative;
-    z-index: 3;
-}
-
-.form-control::-webkit-input-placeholder {
-    color: #cec1f4;
-    opacity: 1;
-}
-
-.form-control:-ms-input-placeholder {
-    color: #cec1f4;
-    opacity: 1;
-}
-
-.form-control::-ms-input-placeholder {
-    color: #cec1f4;
-    opacity: 1;
-}
-
-.form-control::placeholder {
-    color: #cec1f4;
-    opacity: 1;
-}
-
-.get-start-area .btn {
-    background-color: #B71C1C;
-    color: #fff;
-    font-weight: 400;
-    display: inline-block;
-    border: none;
-    height: 50px;
-    min-width: 167px;
-    line-height: 40px;
-    text-align: center;
-    border-radius: 24px 24px 24px 0px;
-    margin-left: 10px;
-    cursor: pointer;
-    font-size: 18px;
-}
-
-.get-start-area .btn:hover {
-    background: #6f52e5;
-    color: #fff;
-    -webkit-transition-duration: 500ms;
-    -o-transition-duration: 500ms;
-    transition-duration: 500ms;
-}
-
-.get-start-area #btn-compra.btn {
-    background-color: #1976D2;
-}
-
-.get-start-area #btn-compra.btn:hover {
-    background: #1565C0;
-}
-
-.get-start-area #btn-venda.btn {
-    background-color: #4CAF50;
-}
-
-.get-start-area #btn-venda.btn:hover {
-    background: #43A047;
-}
-
-.get-start-area #btn-saiba.btn {
-    background-color: #FBC02D;
-}
-
-.get-start-area #btn-saiba.btn:hover {
-    background: #F9A825;
-}
-
-.wellcome-heading > p {
-    color: #fff;
-    font-size: 32px;
-    margin-top: 10px;
-}
-
-.wellcome-heading {
-    margin-bottom: 100px;
-    text-align: center;
-}
-
-/* --------------------------
-:: 4.0 Special Area CSS
--------------------------- */
-
-.single-icon > i {
-    font-size: 36px;
-    color: #B71C1C;
-}
-
-.single-icon {
-    margin-bottom: 25px;
-}
-
-.single-special > h4 {
-    font-size: 22px;
-    color: #263238;
-    margin-bottom: 15px;
-}
-
-.single-special {
-    border: 1px solid #eff2f6;
-    padding: 40px;
-    border-radius: 40px 40px 40px 0px;
-    -webkit-transition-duration: 800ms;
-    -o-transition-duration: 800ms;
-    transition-duration: 800ms;
-    margin-bottom: 30px;
-}
-
-.special_description_content > p{
-    margin-bottom: 50px;
-    font-size: 18px;
-}
-
-.single-special:hover {
-    -webkit-box-shadow: 0 10px 90px rgba(0, 0, 0, 0.08);
-            box-shadow: 0 10px 90px rgba(0, 0, 0, 0.08);
-}
-
-.single-special p {
-    margin-bottom: 0;
-}
-
-.app-download-area {
-    display: -moz-flex;
-    display: -ms-flex;
-    display: -o-flex;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -ms-flex-preferred-size: 1;
-    flex-basis: 1;
-    margin-top: 50px;
-}
-
-.app-download-btn a {
-    border: 1px solid #ddd;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-align: center;
-    -ms-flex-align: center;
-    align-items: center;
-    padding: 15px 30px;
-    border-radius: 30px 30px 30px 0;
-    -webkit-box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
-    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
-    -webkit-box-pack: center;
-    -ms-flex-pack: center;
-    justify-content: center;
-}
-
-.app-download-btn.active a,
-.app-download-btn a:hover {
-    border-color: transparent;
-    background-color: #B71C1C;
-}
-
-.app-download-btn a i {
-    color: #47425d;
-    font-size: 24px;
-    margin-right: 15px;
-    -webkit-transition-duration: 500ms;
-    -o-transition-duration: 500ms;
-    transition-duration: 500ms;
-}
-
-.app-download-btn a p {
-    font-size: 16px;
-    line-height: 1;
-    -webkit-transition-duration: 500ms;
-    -o-transition-duration: 500ms;
-    transition-duration: 500ms;
-}
-
-.app-download-btn a p span {
-    font-size: 12px;
-    display: block;
-}
-
-.app-download-btn:first-child {
-    margin-right: 20px;
-}
-
-.app-download-btn a:hover i,
-.app-download-btn.active a i,
-.app-download-btn.active a p,
-.app-download-btn a:hover p {
-    color: #fff;
-}
-
-/* --------------------------
-:: 5.0 Features Area CSS
--------------------------- */
-
-.single-feature {
-    margin-bottom: 50px;
-}
-
-.single-feature > p {
-    margin-bottom: 0;
-}
-
-.single-feature > i {
-    color: #B71C1C;
-    font-size: 30px;
-    display: inline-block;
-    float: left;
-    margin-right: 10px;
-}
-
-.single-feature > h5 {
-    font-size: 22px;
-    color: #263238;
-}
-
-.single-feature > p {
-    margin-top: 15px;
-}
-
-
-/* --------------------------
-:: 13.0 Contact Area CSS Start
--------------------------- */
-
-.address-text > p,
-.phone-text > p,
-.email-text > p {
-    font-size: 18px;
-    margin-bottom: 10px;
-}
-
-.address-text > p > span,
-.phone-text > p > span,
-.email-text > p > span {
-    color: #5b32b4;
-}
-
-.footer-contact-area .line-shape {
-    margin-left: 0;
-}
-
-.footer-contact-area .heading-text > p {
-    margin-top: 50px;
-}
-
-.footer-contact-area .heading-text {
-    margin-bottom: 50px;
-}
-
-#name {
-    font-size: 18px;
-    padding: 15px 15px;
-    border-radius: 25px 25px 25px 0;
-}
-
-#email {
-    font-size: 18px;
-    padding: 15px 15px;
-    border-radius: 25px 25px 25px 0;
-}
-
-#message {
-    border-radius: 25px 25px 25px 0;
-}
-
-.btn.submit-btn {
-    background: #B71C1C;
-    height: 48px;
-    min-width: 185px;
-    color: #ffffff;
-    font-weight: 500;
-    border-radius: 22px 25px 22px 0;
-}
-
-.btn.submit-btn:hover {
-    background: #5b32b4;
-    color: #fff;
-    -webkit-transition-duration: 500ms;
-    -o-transition-duration: 500ms;
-    transition-duration: 500ms;
-}
-
-.footer-contact-area {
-    background: #f5f9fc;
-}
-
-.footer-text > p {
-    margin-bottom: 50px;
 }
 
 /* --------------------------
@@ -795,85 +457,10 @@ p {
     margin-top: 20px;
 }
 
-
-.section-full {
-  padding: 150px 0;
+footer{
+    padding: 10px 10px 20px;
 }
-
-.section-full .primary-btn{
-  line-height: 40px;
-  padding: 0 40px;
-  border-radius: 20px;
-  background: transparent;
-  border: 1px solid #00ff8c;
-  color: #222222;
-  display: inline-block;
-  font-weight: 600;
-  -webkit-transition: all 0.3s ease 0s;
-  -moz-transition: all 0.3s ease 0s;
-  -o-transition: all 0.3s ease 0s;
-  transition: all 0.3s ease 0s;
-  cursor: pointer;
-}
-.studio-area {
-  position: relative;
-}
-
-.studio-area .container {
-  position: relative;
-  z-index: 3;
-}
-
-.studio-area:before {
-  position: absolute;
-  content: "";
-  left: 0;
-  top: 0;
-  width: 50%;
-  height: 100%;
-  background: #1565C0;
-  z-index: 2;
-}
-
-.studio-area:after {
-  position: absolute;
-  content: "";
-  right: 0;
-  top: 0;
-  width: 50%;
-  height: 100%;
-  background: url(/bg-img/compre-bg.jpg) no-repeat center center/cover;
-  z-index: 1;
-}
-
-#venda.studio-area:after {
-  position: absolute;
-  content: "";
-  right: 0;
-  top: 0;
-  width: 50%;
-  height: 100%;
-  background: #43A047;
-  z-index: 2;
-}
-
-#venda.studio-area:before {
-  position: absolute;
-  content: "";
-  left: 0;
-  top: 0;
-  width: 50%;
-  height: 100%;
-  background: url(/bg-img/venda-bg.jpg) no-repeat center center/cover;
-  z-index: 1;
-}
-
-@media (max-width: 991px) {
-  .studio-area:after {
-    width: 100%;
-  }
-  .studio-area:before {
-    background: rgba(64, 69, 152, 0.95);
-    width: 100%;
-  }
+footer .copyright-text{
+    letter-spacing: .7px;
+    padding-bottom: 10px;
 }

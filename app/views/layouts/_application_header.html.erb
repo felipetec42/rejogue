@@ -1,39 +1,16 @@
 <!-- ***** Header Area Start ***** -->
-<header class="header_area animated">
+<header class="header_area animated" id="header-home">
   <div class="container-fluid">
-    <div class="row align-items-center">
-      <!-- Menu Area Start -->
-      <div class="col-12 col-lg-10">
+    <div class="row">
+      <div class="col-12 col-lg-12">
         <div class="menu_area">
-          <nav class="navbar navbar-expand-lg navbar-light">
-            <!-- Logo -->
-            <a class="navbar-brand" href="#">
-              <%= image_tag "/core-img/logo.png", class: "img-fluid" %>
+          <div class="sing-up-button">
+            <a href="#" data-toggle="modal" data-target="#modal-login">
+              <i class="fa fa-power-off" aria-hidden="true"></i> ENTRAR
             </a>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#ca-navbar" aria-controls="ca-navbar" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
-            <!-- Menu Area -->
-            <div class="collapse navbar-collapse" id="ca-navbar">
-              <ul class="navbar-nav ml-auto" id="nav">
-                <li class="nav-item active"><a class="nav-link" href="home">HOME</a></li>
-                <li class="nav-item"><a class="nav-link" href="sobre">SOBRE</a></li>
-                <li class="nav-item"><a class="nav-link" href="compra">COMPRA</a></li>
-                <li class="nav-item"><a class="nav-link" href="venda">VENDA</a></li>
-                <li class="nav-item"><a class="nav-link" href="contato">CONTATO</a></li>
-              </ul>
-              <div class="sing-up-button d-lg-none">
-                <a href="#" data-toggle="modal" data-target="#modal-login">ENTRAR</a>
-              </div>
-            </div>
-          </nav>
-        </div>
-      </div>
-      <!-- Signup btn -->
-      <div class="col-12 col-lg-2">
-        <div class="sing-up-button d-none d-lg-block">
-          <a href="#" data-toggle="modal" data-target="#modal-login">ENTRAR</a>
+          </div>
         </div>
       </div>
     </div>
   </div>
 </header>
-<!-- ***** Header Area End ***** -->

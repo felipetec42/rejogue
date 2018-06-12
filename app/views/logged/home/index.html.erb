@@ -243,439 +243,530 @@
     </div>
   </div>
 </div>
-<!-- ***** Header Area Start ***** -->
-<header class="header_area sticky">
-  <div class="container-fluid">
-    <div class="row">
-      <!-- Menu Area Start -->
-      <div class="col-12 col-lg-9">
-        <div class="menu_area">
-          <!-- Logo -->
-          <a class="navbar-brand" href="#">
-            <img src="/core-img/logo.png" alt="" class="img-fluid">
-          </a>
-          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#ca-navbar" aria-controls="ca-navbar" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+<div id="search-page">
+  <!-- ***** Header Area Start ***** -->
+  <header class="header_area sticky">
+    <div class="container-fluid">
+      <div class="row">
+        <!-- Menu Area Start -->
+        <div class="col-12 col-lg-9">
+          <div class="menu_area">
+            <!-- Logo -->
+            <a class="navbar-brand" href="#">
+              <img src="/core-img/logo.png" alt="" class="img-fluid">
+            </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#ca-navbar" aria-controls="ca-navbar" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
 
-          <div class="cta-venda">
-            <button data-toggle="modal" data-target="#modal-venda" class="btn-vender">Quero Vender</button>
+            <div class="cta-venda">
+              <button data-toggle="modal" data-target="#modal-venda" class="btn-vender">Quero Vender</button>
+            </div>
+
+            <nav class="navbar navbar-expand-lg">
+              <a class="nav-link" href="messages.html">
+                <i class="fa fa-comments"></i>
+              </a>
+              <a class="nav-link" href="favoritos.html">
+                <i class="fa fa-heart"></i>
+              </a>
+              <a class="nav-link" href="anuncios.html">
+                <i class="fa fa-star"></i>
+              </a>
+              <a class="nav-link" href="perfil.html">
+                <i class="fa fa-user-circle"></i>
+              </a>
+            </nav>
+
           </div>
-
-          <nav class="navbar navbar-expand-lg">
-            <a class="nav-link" href="messages.html">
-              <i class="fa fa-comments"></i>
-            </a>
-            <a class="nav-link" href="favoritos.html">
-              <i class="fa fa-heart"></i>
-            </a>
-            <a class="nav-link" href="anuncios.html">
-              <i class="fa fa-star"></i>
-            </a>
-            <a class="nav-link" href="perfil.html">
-              <i class="fa fa-user-circle"></i>
-            </a>
-          </nav>
-
         </div>
-      </div>
-      <div class="col-lg-3 text-right p-0">
-        <div class="dropdown">
-          <div class="btn-profile dropdown-toggle" id="dropdownMenuButton" data-toggle="dropdown">
-            <img src="/default/profile.jpg">
-            <span>Felipe</span>
-            <i class="fa fa-chevron-down" aria-hidden="true"></i>
-            <ul class="dropdown-menu">
-              <li class="dropdown-item">
-                <%= link_to destroy_user_session_path, class: "nav-link", method: :delete do %>
-                  <i class="fa fa-power-off" aria-hidden="true"></i>
-                  Sair
-                <% end %>
-              </li>
-            </ul>
+        <div class="col-lg-3 text-right p-0">
+          <div class="dropdown">
+            <div class="btn-profile dropdown-toggle" id="dropdownMenuButton" data-toggle="dropdown">
+              <img src="/default/profile.jpg">
+              <span>Felipe</span>
+              <i class="fa fa-chevron-down" aria-hidden="true"></i>
+              <ul class="dropdown-menu">
+                <li class="dropdown-item">
+                  <%= link_to destroy_user_session_path, class: "nav-link", method: :delete do %>
+                    <i class="fa fa-power-off" aria-hidden="true"></i>
+                    Sair
+                  <% end %>
+                </li>
+              </ul>
+            </div>
           </div>
         </div>
       </div>
     </div>
-  </div>
-</header>
-<!-- ***** Header Area End ***** -->
+  </header>
+  <!-- ***** Header Area End ***** -->
 
-<!-- ***** Search Input ***** -->
-<section class="clearfix" id="main-search">
-  <div class="container">
-    <div class="row">
-      <div class="col-lg-12">
-        <form action="#">
-          <div class="input-group mb-3">
-            <input type="text" class="form-control" placeholder="Buscar...">
-            <div class="input-group-append">
-              <button class="btn btn-outline-secondary" type="button">
-                <i class="fa fa-search"></i>
+  <!-- ***** Search Input ***** -->
+  <section class="clearfix" id="main-search">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-12">
+          <form action="#">
+            <div class="input-group mb-3">
+              <input type="text" class="form-control" placeholder="Buscar...">
+              <div class="input-group-append">
+                <button class="btn btn-outline-secondary" type="button">
+                  <i class="fa fa-search"></i>
+                </button>
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- ***** Search Input End ***** -->
+
+  <!-- ***** Filters ***** -->
+
+  <!-- ***** Filters End ***** -->
+
+  <!-- Top Recents -->
+  <section id="top-recents" class="top-section">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-12">
+          <h2>Adicionados recentemente</h2>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-3">
+          <div class="card">
+            <div class="card-img-top">
+              <%= image_tag "/default/test-mario.jpg" %>
+              <div class="btn-offert">R$ 160,00</div>
+              <i class="fa fa-heart-o" aria-hidden="true"></i>
+            </div>
+            <div class="card-body">
+              <div class="card-text">
+                <div class="name-item">
+                 Super Mario Odyssey
+                </div>
+                <div class="platform-item">
+                 Nintendo Switch
+                </div>
+              </div>
+              <div id="detalhes-1" class="collapse">
+                <div class="name">Diego Santana</div>
+                <div class="local">Ribeirão Pires - SP</div>
+                <div class="btn-phone text-left">(11) 91234-5678</div>
+                <div class="row action">
+                  <div class="col-md-6 text-center">
+                    <button class="btn btn-message"><i class="fa fa-comment"></i></button> 
+                  </div>
+                  <div class="col-md-6 text-center">
+                    <button class="btn btn-fotos"><i class="fa fa-camera"></i></button>
+                  </div>
+                </div>
+              </div>
+              <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#detalhes-1"> 
+                Detalhes <i class="fa fa-arrow-down"></i>
               </button>
             </div>
           </div>
-        </form>
-      </div>
-    </div>
-  </div>
-</section>
-<!-- ***** Search Input End ***** -->
+        </div>
 
-<!-- ***** Filters ***** -->
-
-<!-- ***** Filters End ***** -->
-
-<!-- Top Recents -->
-<section id="top-recents" class="top-section">
-  <div class="container">
-    <div class="row">
-      <div class="col-lg-12">
-        <h2>Adicionados recentemente</h2>
-      </div>
-    </div>
-    <div class="row">
-      <div class="col-md-3">
-        <div class="card">
-          <div class="card-img-top">
-            <img src="/default/test-mario.png" alt="">
-          </div>
-          <div class="card-body">
-            <div class="card-text">
-              <div class="name-item">
-               Super Mario Odyssey
-              </div>
-              <div class="platform-item">
-               Nintendo Switch
-              </div>
-
-              <div class="offert-item text-center">
-                <div class="btn-offert">R$ 160,00</div>
-                <i class="fa fa-heart-o" aria-hidden="true"></i>
-              </div>
+        <div class="col-md-3">
+          <div class="card">
+            <div class="card-img-top">
+              <img src="/default/test-witcher.jpg" alt="">
+              <div class="btn-offert">R$ 59,00</div>
+              <i class="fa fa-heart-o" aria-hidden="true"></i>
             </div>
-            <a href="produto-detalhe.html">
-              <button class="btn btn-primary"> + 15 Ofertas <i class="fa fa-arrow-right"></i></button>
-            </a>
+            <div class="card-body">
+              <div class="card-text">
+                <div class="name-item">
+                 The Witcher 3 - Wild Hunt
+                </div>
+                <div class="platform-item">
+                 Playstation 4
+                </div>
+              </div>
+              <div id="detalhes-2" class="collapse">
+                <div class="name">Diego Santana</div>
+                <div class="local">Ribeirão Pires - SP</div>
+                <div class="btn-phone text-left">(11) 91234-5678</div>
+                <div class="row action">
+                  <div class="col-md-6 text-center">
+                    <button class="btn btn-message"><i class="fa fa-comment"></i></button> 
+                  </div>
+                  <div class="col-md-6 text-center">
+                    <button class="btn btn-fotos"><i class="fa fa-camera"></i></button>
+                  </div>
+                </div>
+              </div>
+              <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#detalhes-2"> 
+                Detalhes <i class="fa fa-arrow-down"></i>
+              </button>
+            </div>
           </div>
         </div>
-      </div>
 
-      <div class="col-md-3">
-        <div class="card">
-          <div class="card-img-top">
-            <img src="/default/teste-witcher.png" alt="">
-          </div>
-          <div class="card-body">
-            <div class="card-text">
-              <div class="name-item">
-               The Witcher 3 - Wild Hunt
-              </div>
-              <div class="platform-item">
-               Playstation 3
-              </div>
-
-              <div class="offert-item text-center">
-                <div class="btn-offert">R$ 59,00</div>
-                <i class="fa fa-heart-o" aria-hidden="true"></i>
-              </div>
+        <div class="col-md-3">
+          <div class="card" id="card-3">
+            <div class="card-img-top">
+              <img src="/default/pokemon-card.jpg" alt="">
+              <div class="btn-offert">R$ 89,00</div>
+              <i class="fa fa-heart-o" aria-hidden="true"></i>
             </div>
-
-            <a href="produto-detalhe-2.html">
-              <button class="btn btn-primary"> + 15 Ofertas <i class="fa fa-arrow-right"></i></button>
-            </a>
+            <div class="card-body">
+              <div class="card-text">
+                <div class="name-item">
+                 Pokémon Moon
+                </div>
+                <div class="platform-item">
+                 Nintendo 3DS
+                </div>
+              </div>
+              <div id="detalhes-3" class="collapse">
+                <div class="name">Diego Santana</div>
+                <div class="local">Ribeirão Pires - SP</div>
+                <div class="btn-phone text-left">(11) 91234-5678</div>
+                <div class="row action">
+                  <div class="col-md-6 text-center">
+                    <button class="btn btn-message"><i class="fa fa-comment"></i></button> 
+                  </div>
+                  <div class="col-md-6 text-center">
+                    <button class="btn btn-fotos"><i class="fa fa-camera"></i></button>
+                  </div>
+                </div>
+              </div>
+              <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#detalhes-3"> 
+                Detalhes <i class="fa fa-arrow-down"></i>
+              </button>
+            </div>
           </div>
         </div>
-      </div>
 
-      <div class="col-md-3">
-        <div class="card" id="card-3">
-          <div class="card-img-top">
-            <img src="/default/teste-pokemon.png" alt="">
-          </div>
-          <div class="card-body">
-            <div class="card-text">
-              <div class="name-item">
-               Pokémon Moon
-              </div>
-              <div class="platform-item">
-               Nintendo 3DS
-              </div>
-              <div class="offert-item text-center">
-                <div class="btn-offert">R$ 89,00</div>
-                <i class="fa fa-heart-o" aria-hidden="true"></i>
-              </div>
+        <div class="col-md-3">
+          <div class="card" id="card-4">
+            <div class="card-img-top">
+              <img src="/default/teste-dbz.jpg" alt="">
+              <div class="btn-offert">R$ 140,00</div>
+              <i class="fa fa-heart-o" aria-hidden="true"></i>
             </div>
-            <a href="produto-detalhe-4.html">
-              <button class="btn btn-primary"> + 110 Ofertas <i class="fa fa-arrow-right"></i></button>
-            </a>
-          </div>
-        </div>
-      </div>
-
-      <div class="col-md-3">
-        <div class="card" id="card-4">
-          <div class="card-img-top">
-            <img src="/default/teste-dbz.png" alt="">
-          </div>
-          <div class="card-body">
-            <div class="card-text">
-              <div class="name-item">
-               Dragon Ball Fighter Z
+            <div class="card-body">
+              <div class="card-text">
+                <div class="name-item">
+                 Dragon Ball Fighter Z
+                </div>
+                <div class="platform-item">
+                 Xbox One
+                </div>
               </div>
-              <div class="platform-item">
-               Xbox One
+              <div id="detalhes-4" class="collapse">
+                <div class="name">Diego Santana</div>
+                <div class="local">Ribeirão Pires - SP</div>
+                <div class="btn-phone text-left">(11) 91234-5678</div>
+                <div class="row action">
+                  <div class="col-md-6 text-center">
+                    <button class="btn btn-message"><i class="fa fa-comment"></i></button> 
+                  </div>
+                  <div class="col-md-6 text-center">
+                    <button class="btn btn-fotos"><i class="fa fa-camera"></i></button>
+                  </div>
+                </div>
               </div>
-              <div class="offert-item text-center">
-                <div class="btn-offert">R$ 140,00</div>
-                <i class="fa fa-heart-o" aria-hidden="true"></i>
-              </div>
+              <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#detalhes-4"> 
+                Detalhes <i class="fa fa-arrow-down"></i>
+              </button>
             </div>
-
-            <a href="produto-detalhe-3.html">
-              <button class="btn btn-primary"> + 15 Ofertas <i class="fa fa-arrow-right"></i></button>
-            </a>
-          </div>
-        </div>
-      </div>
-
-
-    </div>
-  </div>
-</section>
-
-<!-- Top Offered -->
-<section id="top-offered" class="top-section">
-  <div class="container">
-    <div class="row">
-      <div class="col-lg-12">
-        <h2>Mais ofertados</h2>
-      </div>
-    </div>
-    <div class="row">
-      <div class="col-md-3">
-        <div class="card">
-          <div class="card-img-top">
-            <img src="/default/test-mario.png" alt="">
-          </div>
-          <div class="card-body">
-            <div class="card-text">
-              <div class="name-item">
-               Super Mario Odyssey
-              </div>
-              <div class="platform-item">
-               Nintendo Switch
-              </div>
-
-              <div class="offert-item text-center">
-                <div class="btn-offert">R$ 160,00</div>
-                <i class="fa fa-heart-o" aria-hidden="true"></i>
-              </div>
-            </div>
-            <a href="produto-detalhe.html">
-              <button class="btn btn-primary"> + 15 Ofertas <i class="fa fa-arrow-right"></i></button>
-            </a>
-          </div>
-        </div>
-      </div>
-
-      <div class="col-md-3">
-        <div class="card">
-          <div class="card-img-top">
-            <img src="/default/teste-witcher.png" alt="">
-          </div>
-          <div class="card-body">
-            <div class="card-text">
-              <div class="name-item">
-               The Witcher 3 - Wild Hunt
-              </div>
-              <div class="platform-item">
-               Playstation 3
-              </div>
-
-              <div class="offert-item text-center">
-                <div class="btn-offert">R$ 59,00</div>
-                <i class="fa fa-heart-o" aria-hidden="true"></i>
-              </div>
-            </div>
-
-            <a href="produto-detalhe-2.html">
-              <button class="btn btn-primary"> + 15 Ofertas <i class="fa fa-arrow-right"></i></button>
-            </a>
-          </div>
-        </div>
-      </div>
-
-      <div class="col-md-3">
-        <div class="card" id="card-3">
-          <div class="card-img-top">
-            <img src="/default/teste-pokemon.png" alt="">
-          </div>
-          <div class="card-body">
-            <div class="card-text">
-              <div class="name-item">
-               Pokémon Moon
-              </div>
-              <div class="platform-item">
-               Nintendo 3DS
-              </div>
-              <div class="offert-item text-center">
-                <div class="btn-offert">R$ 89,00</div>
-                <i class="fa fa-heart-o" aria-hidden="true"></i>
-              </div>
-            </div>
-            <a href="produto-detalhe-4.html">
-              <button class="btn btn-primary"> + 110 Ofertas <i class="fa fa-arrow-right"></i></button>
-            </a>
-          </div>
-        </div>
-      </div>
-
-      <div class="col-md-3">
-        <div class="card" id="card-4">
-          <div class="card-img-top">
-            <img src="/default/teste-dbz.png" alt="">
-          </div>
-          <div class="card-body">
-            <div class="card-text">
-              <div class="name-item">
-               Dragon Ball Fighter Z
-              </div>
-              <div class="platform-item">
-               Xbox One
-              </div>
-              <div class="offert-item text-center">
-                <div class="btn-offert">R$ 140,00</div>
-                <i class="fa fa-heart-o" aria-hidden="true"></i>
-              </div>
-            </div>
-
-            <a href="produto-detalhe-3.html">
-              <button class="btn btn-primary"> + 15 Ofertas <i class="fa fa-arrow-right"></i></button>
-            </a>
-          </div>
-        </div>
-      </div>
-
-
-    </div>
-  </div>
-</section>
-
-<!-- Top Wanted -->
-<section id="top-wanted" class="top-section">
-  <div class="container">
-    <div class="row">
-      <div class="col-lg-12">
-        <h2>Mais procurados</h2>
-      </div>
-    </div>
-    <div class="row">
-      <div class="col-md-3">
-        <div class="card">
-          <div class="card-img-top">
-            <img src="/default/test-mario.png" alt="">
-          </div>
-          <div class="card-body">
-            <div class="card-text">
-              <div class="name-item">
-               Super Mario Odyssey
-              </div>
-              <div class="platform-item">
-               Nintendo Switch
-              </div>
-
-              <div class="offert-item text-center">
-                <div class="btn-offert">R$ 160,00</div>
-                <i class="fa fa-heart-o" aria-hidden="true"></i>
-              </div>
-            </div>
-            <a href="produto-detalhe.html">
-              <button class="btn btn-primary"> + 15 Ofertas <i class="fa fa-arrow-right"></i></button>
-            </a>
-          </div>
-        </div>
-      </div>
-
-      <div class="col-md-3">
-        <div class="card">
-          <div class="card-img-top">
-            <img src="/default/teste-witcher.png" alt="">
-          </div>
-          <div class="card-body">
-            <div class="card-text">
-              <div class="name-item">
-               The Witcher 3 - Wild Hunt
-              </div>
-              <div class="platform-item">
-               Playstation 3
-              </div>
-
-              <div class="offert-item text-center">
-                <div class="btn-offert">R$ 59,00</div>
-                <i class="fa fa-heart-o" aria-hidden="true"></i>
-              </div>
-            </div>
-
-            <a href="produto-detalhe-2.html">
-              <button class="btn btn-primary"> + 15 Ofertas <i class="fa fa-arrow-right"></i></button>
-            </a>
-          </div>
-        </div>
-      </div>
-
-      <div class="col-md-3">
-        <div class="card" id="card-3">
-          <div class="card-img-top">
-            <img src="/default/teste-pokemon.png" alt="">
-          </div>
-          <div class="card-body">
-            <div class="card-text">
-              <div class="name-item">
-               Pokémon Moon
-              </div>
-              <div class="platform-item">
-               Nintendo 3DS
-              </div>
-              <div class="offert-item text-center">
-                <div class="btn-offert">R$ 89,00</div>
-                <i class="fa fa-heart-o" aria-hidden="true"></i>
-              </div>
-            </div>
-            <a href="produto-detalhe-4.html">
-              <button class="btn btn-primary"> + 110 Ofertas <i class="fa fa-arrow-right"></i></button>
-            </a>
-          </div>
-        </div>
-      </div>
-
-      <div class="col-md-3">
-        <div class="card" id="card-4">
-          <div class="card-img-top">
-            <img src="/default/teste-dbz.png" alt="">
-          </div>
-          <div class="card-body">
-            <div class="card-text">
-              <div class="name-item">
-               Dragon Ball Fighter Z
-              </div>
-              <div class="platform-item">
-               Xbox One
-              </div>
-              <div class="offert-item text-center">
-                <div class="btn-offert">R$ 140,00</div>
-                <i class="fa fa-heart-o" aria-hidden="true"></i>
-              </div>
-            </div>
-
-            <a href="produto-detalhe-3.html">
-              <button class="btn btn-primary"> + 15 Ofertas <i class="fa fa-arrow-right"></i></button>
-            </a>
           </div>
         </div>
       </div>
     </div>
-  </div>
-</section>
+  </section>
 
+  <!-- Top Offered -->
+  <section id="top-offered" class="top-section">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-12">
+          <h2>Mais ofertados</h2>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-3">
+          <div class="card">
+            <div class="card-img-top">
+              <%= image_tag "/default/card-fifa.jpg" %>
+              <div class="btn-offert">R$ 80,00</div>
+              <i class="fa fa-heart-o" aria-hidden="true"></i>
+            </div>
+            <div class="card-body">
+              <div class="card-text">
+                <div class="name-item">
+                 Fifa 18
+                </div>
+                <div class="platform-item">
+                 Playstation 4
+                </div>
+              </div>
+              <div id="detalhes-1" class="collapse">
+                <div class="name">Diego Santana</div>
+                <div class="local">Ribeirão Pires - SP</div>
+                <div class="btn-phone text-left">(11) 91234-5678</div>
+                <div class="row action">
+                  <div class="col-md-6 text-center">
+                    <button class="btn btn-message"><i class="fa fa-comment"></i></button> 
+                  </div>
+                  <div class="col-md-6 text-center">
+                    <button class="btn btn-fotos"><i class="fa fa-camera"></i></button>
+                  </div>
+                </div>
+              </div>
+              <a class="btn btn-primary" href="produto-detalhe.html"> 
+                + 26 ofertas <i class="fa fa-arrow-right"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-3">
+          <div class="card">
+            <div class="card-img-top">
+              <img src="/default/card-gta.jpg" alt="">
+              <div class="btn-offert">R$ 59,00</div>
+              <i class="fa fa-heart-o" aria-hidden="true"></i>
+            </div>
+            <div class="card-body">
+              <div class="card-text">
+                <div class="name-item">
+                 GTA V
+                </div>
+                <div class="platform-item">
+                 Playstation 4
+                </div>
+              </div>
+              <div id="detalhes-2" class="collapse">
+                <div class="name">Diego Santana</div>
+                <div class="local">Ribeirão Pires - SP</div>
+                <div class="btn-phone text-left">(11) 91234-5678</div>
+                <div class="row action">
+                  <div class="col-md-6 text-center">
+                    <button class="btn btn-message"><i class="fa fa-comment"></i></button> 
+                  </div>
+                  <div class="col-md-6 text-center">
+                    <button class="btn btn-fotos"><i class="fa fa-camera"></i></button>
+                  </div>
+                </div>
+              </div>
+              <a class="btn btn-primary" href="produto-detalhe.html"> 
+                + 7 ofertas <i class="fa fa-arrow-right"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-3">
+          <div class="card" id="card-3">
+            <div class="card-img-top">
+              <img src="/default/card-last.jpg" alt="">
+              <div class="btn-offert">R$ 89,00</div>
+              <i class="fa fa-heart-o" aria-hidden="true"></i>
+            </div>
+            <div class="card-body">
+              <div class="card-text">
+                <div class="name-item">
+                 Last of us
+                </div>
+                <div class="platform-item">
+                 Playstation 4
+                </div>
+              </div>
+              <div id="detalhes-3" class="collapse">
+                <div class="name">Diego Santana</div>
+                <div class="local">Ribeirão Pires - SP</div>
+                <div class="btn-phone text-left">(11) 91234-5678</div>
+                <div class="row action">
+                  <div class="col-md-6 text-center">
+                    <button class="btn btn-message"><i class="fa fa-comment"></i></button> 
+                  </div>
+                  <div class="col-md-6 text-center">
+                    <button class="btn btn-fotos"><i class="fa fa-camera"></i></button>
+                  </div>
+                </div>
+              </div>
+              <a class="btn btn-primary" href="produto-detalhe.html"> 
+                + 8 ofertas <i class="fa fa-arrow-right"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-3">
+          <div class="card" id="card-4">
+            <div class="card-img-top">
+              <img src="/default/card-uncharted.jpg" alt="">
+              <div class="btn-offert">R$ 49,00</div>
+              <i class="fa fa-heart-o" aria-hidden="true"></i>
+            </div>
+            <div class="card-body">
+              <div class="card-text">
+                <div class="name-item">
+                 Uncharted 4
+                </div>
+                <div class="platform-item">
+                 Playstation 4
+                </div>
+              </div>
+              <a class="btn btn-primary" href="produto-detalhe.html"> 
+                + 10 ofertas <i class="fa fa-arrow-right"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Top Wanted -->
+  <section id="top-wanted" class="top-section">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-12">
+          <h2>Mais procurados</h2>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-3">
+          <div class="card">
+            <div class="card-img-top">
+              <%= image_tag "/default/card-farcry.jpg" %>
+              <div class="btn-offert">R$ 160,00</div>
+              <i class="fa fa-heart-o" aria-hidden="true"></i>
+            </div>
+            <div class="card-body">
+              <div class="card-text">
+                <div class="name-item">
+                 Far Cry 5
+                </div>
+                <div class="platform-item">
+                 Playstation 4
+                </div>
+              </div>
+              <div id="detalhes-1" class="collapse">
+                <div class="name">Diego Santana</div>
+                <div class="local">Ribeirão Pires - SP</div>
+                <div class="btn-phone text-left">(11) 91234-5678</div>
+                <div class="row action">
+                  <div class="col-md-6 text-center">
+                    <button class="btn btn-message"><i class="fa fa-comment"></i></button> 
+                  </div>
+                  <div class="col-md-6 text-center">
+                    <button class="btn btn-fotos"><i class="fa fa-camera"></i></button>
+                  </div>
+                </div>
+              </div>
+              <a class="btn btn-primary" href="produto-detalhe.html"> 
+                + 6 ofertas <i class="fa fa-arrow-right"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-3">
+          <div class="card">
+            <div class="card-img-top">
+              <img src="/default/card-nino.jpg" alt="">
+              <div class="btn-offert">R$ 59,00</div>
+              <i class="fa fa-heart-o" aria-hidden="true"></i>
+            </div>
+            <div class="card-body">
+              <div class="card-text">
+                <div class="name-item">
+                 Ni No Kuni 2
+                </div>
+                <div class="platform-item">
+                 Playstation 4
+                </div>
+              </div>
+              <div id="detalhes-2" class="collapse">
+                <div class="name">Diego Santana</div>
+                <div class="local">Ribeirão Pires - SP</div>
+                <div class="btn-phone text-left">(11) 91234-5678</div>
+                <div class="row action">
+                  <div class="col-md-6 text-center">
+                    <button class="btn btn-message"><i class="fa fa-comment"></i></button> 
+                  </div>
+                  <div class="col-md-6 text-center">
+                    <button class="btn btn-fotos"><i class="fa fa-camera"></i></button>
+                  </div>
+                </div>
+              </div>
+              <a class="btn btn-primary" href="produto-detalhe.html"> 
+                + 7 ofertas <i class="fa fa-arrow-right"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-3">
+          <div class="card" id="card-3">
+            <div class="card-img-top">
+              <img src="/default/card-zelda.jpg" alt="">
+              <div class="btn-offert">R$ 89,00</div>
+              <i class="fa fa-heart-o" aria-hidden="true"></i>
+            </div>
+            <div class="card-body">
+              <div class="card-text">
+                <div class="name-item">
+                 Zelda - Breath of the Wild
+                </div>
+                <div class="platform-item">
+                 Switch
+                </div>
+              </div>
+              <div id="detalhes-3" class="collapse">
+                <div class="name">Diego Santana</div>
+                <div class="local">Ribeirão Pires - SP</div>
+                <div class="btn-phone text-left">(11) 91234-5678</div>
+                <div class="row action">
+                  <div class="col-md-6 text-center">
+                    <button class="btn btn-message"><i class="fa fa-comment"></i></button> 
+                  </div>
+                  <div class="col-md-6 text-center">
+                    <button class="btn btn-fotos"><i class="fa fa-camera"></i></button>
+                  </div>
+                </div>
+              </div>
+              <a class="btn btn-primary" href="produto-detalhe.html"> 
+                + 8 ofertas <i class="fa fa-arrow-right"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-3">
+          <div class="card" id="card-4">
+            <div class="card-img-top">
+              <img src="/default/card-god.jpg" alt="">
+              <div class="btn-offert">R$ 140,00</div>
+              <i class="fa fa-heart-o" aria-hidden="true"></i>
+            </div>
+            <div class="card-body">
+              <div class="card-text">
+                <div class="name-item">
+                 God of War 5
+                </div>
+                <div class="platform-item">
+                 Xbox One
+                </div>
+              </div>
+              <a class="btn btn-primary" href="produto-detalhe.html"> 
+                + 10 ofertas <i class="fa fa-arrow-right"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+</div>
 <script>
   $('#btn-venda-1').click(function(){
     $('#venda-1').fadeOut();
